@@ -1,0 +1,1 @@
+# Industrial-Standard-Ontology-Design-Patterns
