@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hsu-ifa.de/ontologies/WADL#"
+     xml:base="http://www.hsu-ifa.de/ontologies/WADL"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:WADL1="http://www.hsu-ifa.de/ontologies/WADL#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:WADL="http://www.hsu-ifa.de/WADL#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/WADL">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:isDefinedBy>Miguel Vieira</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasMethod">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasParameter">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Representation"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Request"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasParameterOption -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasParameterOption">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Option"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasRepresentation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Request"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Representation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasRequest -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasRequest">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Request"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasResource">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resources"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasResponse -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasResponse">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasService">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Resources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasBase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasBase">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Resources"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasId">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Representation"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasMediaType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasMediaType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Option"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Representation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasOptionValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasOptionValue">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Option"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasParameterDefault -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasParameterDefault">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasParameterName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasParameterName">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#NMTOKEN"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasParameterRequired -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasParameterRequired">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasParameterType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasParameterType">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Optionally indicates the type of the parameter as an XML qualified name, defaults to xsd:string.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasPath -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasPath">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#hasQueryType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/WADL#hasQueryType">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#DELETE -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#DELETE">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:comment>The DELETE method deletes the specified resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#GET -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#GET">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:comment>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#HEAD -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#HEAD">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:comment>The HEAD method asks for a response identical to that of a GET request, but without the response body.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#HeaderParameter -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#HeaderParameter">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:comment>Specifies a HTTP header that pertains to the HTTP request (resource or request) or HTTP response (response).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#MatrixParameter -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#MatrixParameter">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:comment>Specifies a matrix URI component.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Method -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Method">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasRequest"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Request"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A method element describes the input to and output from an HTTP protocol method that may be applied to a resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Option -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Option">
+        <rdfs:comment>An Option element defines one of a set of possible values for the parameter represented by its parent param element.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#PATCH -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PATCH">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:comment>The PATCH method is used to apply partial modifications to a resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#POST -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#POST">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:comment>The POST method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#PUT -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PUT">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Method"/>
+        <rdfs:comment>The PUT method replaces all current representations of the target resource with the request payload.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Parameter -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Parameter">
+        <rdfs:comment>A Parameter element describes a parameterized component of its parent element.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#PlainParameter -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PlainParameter">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:comment>Specifies a component of the representation formatted as a string encoding of the parameter value according to the rules of the media type.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#QueryParameter -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#QueryParameter">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:comment>For Resource or Request: Specifies a URI query parameter represented according to the rules for the query component media type specified by the queryType attribute.
+For Representation: Specifies a component of the representation as a name value pair formatted according to the rules of the media type. Typically used with media type &apos;application/x-www-form-urlencoded&apos; or &apos;multipart/form-data&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Representation -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Representation">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasParameter"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#HeaderParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#MatrixParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#TemplateParameter"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A representation element describes a representation of a resource&apos;s state.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Request -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Request">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasParameter"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#MatrixParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PlainParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#TemplateParameter"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A request element describes the input to be included when applying an HTTP method to a resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Resource -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resource">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasMethod"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#DELETE"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasMethod"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#GET"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasMethod"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#HEAD"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasMethod"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#PATCH"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasMethod"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#POST"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasMethod"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#PUT"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasParameter"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#PlainParameter"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A resource element describes a set of resources, each identified by a URI that follows a common pattern.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Resources -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Resources">
+        <rdfs:comment>The resources element acts as a container for the resources provided by the application.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#Response -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#Response">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#hasParameter"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#MatrixParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PlainParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#QueryParameter"/>
+                                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#TemplateParameter"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A response element describes the output that results from performing an HTTP method on a resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#TemplateParameter -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#TemplateParameter">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Parameter"/>
+        <rdfs:comment>The parameter is represented as a string encoding of the parameter value and is substituted into the value of the path attribute of the resource element.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#200 -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#200">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+        <rdfs:comment>OK: The request was successfully processed and the result of the request is transferred to the response.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#201 -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#201">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+        <rdfs:comment>Created: The request was successfully processed. The requested resource was created before sending the response. The &quot;location&quot;-header-field may contain the address of the created resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#404 -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#404">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+        <rdfs:comment>Not Found: The requested resource was not found. Also reffered to as dead links.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/WADL#500 -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/WADL#500">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/WADL#Response"/>
+        <rdfs:comment>Internal Server Error: This is a collection status code for unexpected server errors.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#DELETE"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#GET"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#HEAD"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PATCH"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#POST"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PUT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#HeaderParameter"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#MatrixParameter"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#PlainParameter"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#QueryParameter"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#TemplateParameter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#200"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#201"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#404"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/WADL#500"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
