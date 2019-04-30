@@ -1,0 +1,2275 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hsu-ifa.de/ontologies/DIN8580#"
+     xml:base="http://www.hsu-ifa.de/ontologies/DIN8580"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580">
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Ablöten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ablöten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.7
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Abscheiden_aus_der_Dampfphase_in_einer_Form -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Abscheiden_aus_der_Dampfphase_in_einer_Form">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_gas-_oder_dampfförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.8.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Abtragen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Abtragen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+        <rdfs:comment>Gruppe 3.4 
+DIN 8590</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.3
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Anlassen_oder_Auslagern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Anlassen_oder_Auslagern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Anstreichen_oder_Lackieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Anstreichen_oder_Lackieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Auflegen_oder_Aufsetzen_oder_Schichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Auflegen_oder_Aufsetzen_oder_Schichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        <rdfs:comment>Untergruppe 4.1.1
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Auftraghartlöten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Auftraghartlöten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Löten"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Auftragweichlöten"/>
+        <rdfs:comment>Untergruppe 5.7.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Auftragweichlöten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Auftragweichlöten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Löten"/>
+        <rdfs:comment>Untergruppe 5.7.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Auseinandernehmen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Auseinandernehmen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.1
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Ausgießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ausgießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+        <rdfs:comment>Untergruppe 4.4.1
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Aushärten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Aushärten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Austenitformhärten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Austenitformhärten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Thermomechanisches_Behandeln"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Heißisostatisches_Nachverdichten"/>
+        <rdfs:comment>Untergruppe 6.3.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Bandschleifen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bandschleifen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.2
+DIN 8589-12</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beißschneiden -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beißschneiden">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        <rdfs:comment>Untergruppe 3.1.3
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Belichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Belichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Photochemische_Verfahren"/>
+        <rdfs:comment>Untergruppe 6.7.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren"/>
+        <rdfs:comment>Hauptgruppe 5: Fertigen durch Aufbringen einer fest haftenden Schicht aus formlosem Stoff auf ein Werkstück;
+maßgebend ist der unmittelbar vor dem Beschichten herrschende Zustand des Beschichtungsstoffes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_breiigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_breiigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_gas-_oder_dampfförmigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_gas-_oder_dampfförmigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.8
+Vakuumbeschichten</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_ionisierten_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_ionisierten_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_körnigen_oder_pulverförmigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_körnigen_oder_pulverförmigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_plastischen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_plastischen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Gießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Gießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Löten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Löten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.7
+Verzinken, Verzinnen u. Ä. von Drähten, Blechen und Profilen ist dem Wesen nach ein Auftraglöten. Da jedoch die Benennung Löten für diese Verfahren nicht üblich ist, werden sie in der Untergruppe 5.1.1 und nicht in der Gruppe 5.7 aufgeführt.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Schweißen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Schweißen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+        <rdfs:comment>Gruppe 5.6
+Beschichten durch Schweißen ist nur durch Schmelzschweißen möglich.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_thermisches_Spritzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_thermisches_Spritzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.4.3
+DIN EN 657</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Beschriften -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschriften">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Bestrahlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bestrahlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen"/>
+        <rdfs:comment>Gruppe 2.4
+DIN 8586</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen_mit_drehender_Werkzeugbewegung -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen_mit_drehender_Werkzeugbewegung">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen_mit_geradliniger_Werkzeugbewegung"/>
+        <rdfs:comment>Untergruppe 2.4.2
+DIN 8586</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen_mit_geradliniger_Werkzeugbewegung -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen_mit_geradliniger_Werkzeugbewegung">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen"/>
+        <rdfs:comment>Untergruppe 2.4.1
+DIN 8586</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Blasformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Blasformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Bohren_oder_Senken_oder_Reiben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bohren_oder_Senken_oder_Reiben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.2
+DIN 8589-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Brechen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Brechen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        <rdfs:comment>Untergruppe 3.1.6
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Bürstenspanen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bürstenspanen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.8
+DIN 8589-8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Abtragen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Abtragen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Abtragen"/>
+        <rdfs:comment>Untergruppe 3.4.2
+DIN 8590</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Beschichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Beschichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_ionisierten_Zustand"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Galvanisches_Beschichten"/>
+        <rdfs:comment>Untergruppe 5.9.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Reinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Reinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+        <rdfs:comment>Untergruppe 3.6.5
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Drehen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Drehen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.1
+DIN 8589-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Druckdrücken -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Druckdrücken">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.5
+DIN 8583-6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Drucken_oder_Bedrucken -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Drucken_oder_Bedrucken">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Druckgießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Druckgießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen"/>
+        <rdfs:comment>Gruppe 2.1
+DIN 8583-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Drücken -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Drücken">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+        <rdfs:comment>Untergruppe 2.2.3
+DIN 8584-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Durchziehen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Durchziehen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+        <rdfs:comment>Untergruppe 2.2.1
+DIN 8584-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Einbetten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einbetten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+        <rdfs:comment>Untergruppe 4.4.2
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Eindrücken -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Eindrücken">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.4
+DIN 8583-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Einfüllen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einfüllen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Füllen"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Tränken_oder_Imprägnieren"/>
+        <rdfs:comment>Untergruppe 4.2.1
+DIN 8593-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Eingalvanisieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Eingalvanisieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+        <rdfs:comment>Untergruppe 4.4.4
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Einhängen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einhängen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        <rdfs:comment>Untergruppe 4.1.4
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Einlegen_oder_Einsetzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einlegen_oder_Einsetzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        <rdfs:comment>Untergruppe 4.1.2
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Einrenken -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einrenken">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        <rdfs:comment>Untergruppe 4.1.5
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Elektrochemisches_Abtragen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Elektrochemisches_Abtragen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Abtragen"/>
+        <rdfs:comment>Untergruppe 3.4.3
+DIN 8590</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Elektrolytisches_Abscheiden_in_einer_Form -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Elektrolytisches_Abscheiden_in_einer_Form">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_ionisierten_Zustand"/>
+        <rdfs:comment>Untergruppe 1.9.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Elektrostatisches_Beschichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Elektrostatisches_Beschichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.4.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Emaillieren_oder_Glasieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Emaillieren_oder_Glasieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Entleeren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Entleeren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.2
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fallen_oder_Raspeln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fallen_oder_Raspeln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.7
+DIN 8589-7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Federnd_Einspreizen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Federnd_Einspreizen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        <rdfs:comment>Untergruppe 4.1.6
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren">
+        <rdfs:comment>alle Verfahren zur Herstellung von geometrisch bestimmten festen Körpern; 
+sie schließen die Verfahren zur Gewinnung erster Formen aus dem formlosen Zustand, zur Veränderung dieser Form sowie zur Veränderung der Stoffeigenschaften ein</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Freiformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Freiformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.2
+DIN 8583-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fräsen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fräsen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.3
+DIN 8589-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Färben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Färben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren"/>
+        <rdfs:comment>Hauptgruppe 4: auf Dauer angelegtes Verbinden oder sonstiges Zusammenbringen von zwei oder mehreren Werkstücken geometrisch bestimmter fester Form oder von eben solchen Werkstücken mit formlosem Stoff;
+dabei wird der Zusammenhalt örtlich geschaffen und im Ganzen vermehrt
+DIN 8593-0</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Löten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Löten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.7
+DIN 8593-7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Nietverfahren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Nietverfahren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 4.5.3
+DIN 8593-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Presspassung -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Presspassung">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.4
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Schweißen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Schweißen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.6
+DIN 8593-6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.5
+DIN 8593-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen_bei_Blech-_Rohr-_und_Profilteilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen_bei_Blech-_Rohr-_und_Profilteilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 4.5.2
+DIN 8593-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen_drahtförmiger_Körper -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen_drahtförmiger_Körper">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 4.5.1
+DIN 8593-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.4
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Füllen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Füllen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.2
+DIN 8593-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Galvanisches_Beschichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Galvanisches_Beschichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_ionisierten_Zustand"/>
+        <rdfs:comment>Untergruppe 5.9.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Gesenkformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Gesenkformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.3
+DIN 8583-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Gießen_von_Beton_oder_Gips -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Gießen_von_Beton_oder_Gips">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_breiigen_Zustand"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Gießen_von_Porzellan_oder_Keramik"/>
+        <rdfs:comment>Untergruppe 1.3.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Gießen_von_Porzellan_oder_Keramik -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Gießen_von_Porzellan_oder_Keramik">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_breiigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.3.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Gleitspanen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Gleitspanen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.7
+DIN 8589-17</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Glühen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Glühen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Heißisostatisches_Nachverdichten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Heißisostatisches_Nachverdichten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Thermomechanisches_Behandeln"/>
+        <rdfs:comment>Untergruppe 6.3.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Faserplatten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Faserplatten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_span-_oder_faserförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.5.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Papier_und_Pappe -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Papier_und_Pappe">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_span-_oder_faserförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.5.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Spanplatten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Spanplatten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_span-_oder_faserförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.5.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Hobeln_oder_Stoßen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Hobeln_oder_Stoßen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.4
+DIN 8589-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Honen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Honen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.4
+DIN 8589-14</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Hubschleifen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Hubschleifen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.3
+DIN 8589-13</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Härten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Härten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Ineinanderschieben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ineinanderschieben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        <rdfs:comment>Untergruppe 4.1.3
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Innenhochdruck-Weitstauchen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Innenhochdruck-Weitstauchen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+        <rdfs:comment>Untergruppe 2.2.6
+DIN 8584-7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Isothermisches_Umwandeln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Isothermisches_Umwandeln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Kalandrieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kalandrieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Kitten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kitten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+        <rdfs:comment>Untergruppe 4.4.6
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Klammern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Klammern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.3
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Kleben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.8
+DIN 8593-8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Kleben_mit_chemisch_abbindenden_Klebstoffen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben_mit_chemisch_abbindenden_Klebstoffen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben_mit_physikalisch_abbindenden_Klebstoffen"/>
+        <rdfs:comment>Untergruppe 4.8.2
+DIN 8593-8
+Reaktionsklebstoffe</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Kleben_mit_physikalisch_abbindenden_Klebstoffen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben_mit_physikalisch_abbindenden_Klebstoffen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben"/>
+        <rdfs:comment>Untergruppe 4.8.1
+DIN 8593-8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Klemmen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Klemmen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.2
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Knickbauchen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Knickbauchen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+        <rdfs:comment>Untergruppe 2.2.5
+DIN 8584-6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Kragenziehen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kragenziehen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+        <rdfs:comment>Untergruppe 2.2.4
+DIN 8584-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Längen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Längen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugumformen"/>
+        <rdfs:comment>Untergruppe 2.3.1
+DIN 8585-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Läppen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Läppen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.5
+DIN 8589-15</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Lösemittelreinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Lösemittelreinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+        <rdfs:comment>Untergruppe 3.6.4
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Lösen_kraftschlüssiger_Verbindungen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Lösen_kraftschlüssiger_Verbindungen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.3
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Lösen_von_Klebeverbindungen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Lösen_von_Klebeverbindungen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.8
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Magnetisieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Magnetisieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Mechanisches_Reinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Mechanisches_Reinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+        <rdfs:comment>Untergruppe 3.6.2
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Messerschneiden -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Messerschneiden">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        <rdfs:comment>Untergruppe 3.1.2
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Modellieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Modellieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Nageln_oder_Verstiften_oder_Einschlagen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Nageln_oder_Verstiften_oder_Einschlagen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.5
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Niederdruckgießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Niederdruckgießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Oberflächenveredelungsstrahlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Oberflächenveredelungsstrahlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.7
+DIN 8200</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Photochemische_Verfahren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Photochemische_Verfahren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Pressen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Pressen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.4.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Pressformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Pressformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Pressverbindungsschweißen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Pressverbindungsschweißen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Schweißen"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Schmelzverbindungsschweißen"/>
+        <rdfs:comment>Untergruppe 4.6.1
+DIN 8593-6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Putzen_oder_Verputzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Putzen_oder_Verputzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_breiigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.3.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+        <rdfs:comment>Gruppe 3.6 
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Reinigungsstrahlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigungsstrahlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+        <rdfs:comment>Untergruppe 3.6.1
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Reißen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Reißen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        <rdfs:comment>Untergruppe 3.1.5
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Räumen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Räumen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.5
+DIN 8589-5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Sandformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Sandformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.4.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schaben_oder_Meißeln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schaben_oder_Meißeln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.9
+DIN 8589-9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Scherschneiden -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Scherschneiden">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        <rdfs:comment>Untergruppe 3.1.1
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schleifen_mit_rotierendem_Werkzeug -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schleifen_mit_rotierendem_Werkzeug">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.1
+DIN 8589-11</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schleudergießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schleudergießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schmelzauftragschweißen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schmelzauftragschweißen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Schweißen"/>
+        <rdfs:comment>Untergruppe 5.6.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schmelztauchen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schmelztauchen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.1.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schmelzverbindungsschweißen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schmelzverbindungsschweißen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Schweißen"/>
+        <rdfs:comment>Untergruppe 4.6.2
+DIN 8593-6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schrauben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schrauben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.1
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schubumformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schubumformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen"/>
+        <rdfs:comment>Gruppe 2.5
+DIN 8587</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schwerkraftgießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schwerkraftgießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Schäumen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schäumen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Sintern_oder_Brennen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Sintern_oder_Brennen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Spachteln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spachteln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.2.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Spalten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spalten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        <rdfs:comment>Untergruppe 3.1.4
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+        <rdfs:comment>Gruppe 3.2 
+DIN 8589-0</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+        <rdfs:comment>Gruppe 3.3 
+DIN 8589-0</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Spritzgießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spritzgießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Spritzpressen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spritzpressen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren"/>
+        <rdfs:comment>Hauptgruppe 6: Fertigen durch Verändern der Eigenschaften des Werkstoffes, aus dem ein Werkstück besteht; 
+dies geschieht u. a. durch Veränderungen im submikroskopischen bzw. atomaren Bereich, z. B. durch Diffusion von Atomen, Erzeugung und Bewegung von Versetzungen im Atomgitter, chemische Reaktionen. Unvermeidbar auftretende Formänderungen gehören nicht zum Wesen dieser Verfahren</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Strahlspanen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Strahlspanen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.3.6
+DIN 8200</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Stranggießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Stranggießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Strangpressen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Strangpressen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.4
+Extrudieren</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Strömungstechnisches_Reinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Strömungstechnisches_Reinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+        <rdfs:comment>Untergruppe 3.6.3
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Sägen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Sägen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+        <rdfs:comment>Untergruppe 3.2.6
+DIN 8589-6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Tauchformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tauchformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Textiles_Fügen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Textiles_Fügen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Thermisches_Abtragen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermisches_Abtragen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Abtragen"/>
+        <rdfs:comment>Untergruppe 3.4.1
+DIN 8590</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Thermisches_Reinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermisches_Reinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+        <rdfs:comment>Untergruppe 3.6.6
+DIN 8592</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Thermochemisches_Behandeln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermochemisches_Behandeln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Thermomechanisches_Behandeln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermomechanisches_Behandeln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Tiefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tiefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugumformen"/>
+        <rdfs:comment>Untergruppe 2.3.3
+DIN 8585-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Tiefkühlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tiefkühlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Tiefziehen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tiefziehen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+        <rdfs:comment>Untergruppe 2.2.2
+DIN 8584-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Trennen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren"/>
+        <rdfs:comment>Hauptgruppe 3: Fertigen durch Aufheben des Zusammenhaltens von Körpern, wobei der Zusammenhalt teilweise oder im Ganzen vermindert wird</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Tränken_oder_Imprägnieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tränken_oder_Imprägnieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Füllen"/>
+        <rdfs:comment>Untergruppe 4.2.2
+DIN 8593-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Umformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren"/>
+        <rdfs:comment>Hauptgruppe 2: Fertigen durch bildsames (plastisches) Ändern der Form eines festen Körpers; 
+dabei werden sowohl die Masse als auch der Zusammenhalt beibehalten
+DIN 8582</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Umformstrahlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Umformstrahlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.6
+DIN 8200</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Ummanteln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ummanteln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+        <rdfs:comment>Untergruppe 4.4.5
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fertigungsverfahren"/>
+        <rdfs:comment>Hauptgruppe 1: Fertigen eines festen Körpers aus formlosem Stoff durch Schaffen des Zusammenhaltes; 
+hierbei treten die Stoffeigenschaften des Werkstückes bestimmbar in Erscheinung</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_breiigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_breiigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_gas-_oder_dampfförmigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_gas-_oder_dampfförmigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_ionisierten_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_ionisierten_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_körnigen_oder_pulverförmigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_körnigen_oder_pulverförmigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_span-_oder_faserförmigen_Zustand -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_span-_oder_faserförmigen_Zustand">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        <rdfs:comment>Gruppe 1.5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_durch_thermisches_Spritzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_durch_thermisches_Spritzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.4.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_von_faserverstärkten_Kunststoffen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_von_faserverstärkten_Kunststoffen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.8
+Niederdruckverfahren</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Vakuumbedampfen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Vakuumbedampfen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_gas-_oder_dampfförmigen_Zustand"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Vakuumbestäuben"/>
+        <rdfs:comment>Untergruppe 5.8.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Vakuumbestäuben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Vakuumbestäuben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_gas-_oder_dampfförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.8.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verbindungshartlöten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verbindungshartlöten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Löten"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Verbindungsweichlöten"/>
+        <rdfs:comment>Untergruppe 4.7.2
+DIN 8505-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verbindungsweichlöten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verbindungsweichlöten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Löten"/>
+        <rdfs:comment>Untergruppe 4.7.1
+DIN 8505-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Schmieden -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Schmieden">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 6.1.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Walzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Walzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 6.1.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Ziehen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Ziehen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 6.1.3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigungsstrahlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigungsstrahlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen"/>
+        <rdfs:comment>Untergruppe 6.1.1
+DIN 8200</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Vergießen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Vergießen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+        <rdfs:comment>Untergruppe 4.4.3
+DIN 8593-4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Vergüten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Vergüten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        <rdfs:comment>Untergruppe 6.2.5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verkeilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verkeilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.6
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verschieben_mit_drehender_Werkzeugbewegung -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verschieben_mit_drehender_Werkzeugbewegung">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Schubumformen"/>
+        <owl:disjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Verschieben_mit_geradliniger_Werkzeugbewegung"/>
+        <rdfs:comment>Untergruppe 2.5.2
+DIN 8587</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verschieben_mit_geradliniger_Werkzeugbewegung -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verschieben_mit_geradliniger_Werkzeugbewegung">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Schubumformen"/>
+        <rdfs:comment>Untergruppe 2.5.1
+DIN 8587</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Verspannen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verspannen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+        <rdfs:comment>Untergruppe 4.3.7
+DIN 8593-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Walzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Walzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+        <rdfs:comment>Untergruppe 2.1.1
+DIN 8583-2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Weiten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Weiten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zugumformen"/>
+        <rdfs:comment>Untergruppe 2.3.2
+DIN 8585-3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Wirbelsintern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Wirbelsintern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+        <rdfs:comment>Untergruppe 5.4.1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+        <rdfs:comment>Gruppe 6.2
+DIN EN 10052</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+        <rdfs:comment>Gruppe 3.5 
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_textiler_Verbindungen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_textiler_Verbindungen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.9
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_von_durch_Umformen_gefügten_Teilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_von_durch_Umformen_gefügten_Teilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.5
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_von_durch_Urformen_gefügten_Teilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_von_durch_Urformen_gefügten_Teilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+        <rdfs:comment>Untergruppe 3.5.4
+DIN 8591</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+        <rdfs:comment>Gruppe 3.1 
+DIN 8588</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Ziehformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ziehformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.2.5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen"/>
+        <rdfs:comment>Gruppe 2.2
+DIN 8584-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zugumformen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zugumformen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen"/>
+        <rdfs:comment>Gruppe 2.3
+DIN 8585-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+        <rdfs:comment>Gruppe 4.1
+DIN 8593-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/DIN8580#Züchten_von_Kristallen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Züchten_von_Kristallen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+        <rdfs:comment>Untergruppe 1.1.9</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ablöten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Auseinandernehmen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Entleeren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Lösen_kraftschlüssiger_Verbindungen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Lösen_von_Klebeverbindungen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_textiler_Verbindungen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_von_durch_Umformen_gefügten_Teilen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen_von_durch_Urformen_gefügten_Teilen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Abtragen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_bestimmten_Schneiden"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spanen_mit_geometrisch_unbestimmten_Schneiden"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerlegen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zerteilen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#An-_und_Einpressen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Löten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Schweißen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Urformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Füllen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kleben"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Textiles_Fügen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zusammensetzen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Anlassen_oder_Auslagern"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Aushärten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Glühen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Härten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Isothermisches_Umwandeln"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermochemisches_Behandeln"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tiefkühlen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Vergüten"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Anstreichen_oder_Lackieren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Gießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschriften"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Drucken_oder_Bedrucken"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Emaillieren_oder_Glasieren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Färben"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schmelztauchen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Auflegen_oder_Aufsetzen_oder_Schichten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einhängen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einlegen_oder_Einsetzen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einrenken"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Federnd_Einspreizen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ineinanderschieben"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ausgießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Einbetten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Eingalvanisieren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kitten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ummanteln"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Vergießen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bandschleifen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Gleitspanen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Honen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Hubschleifen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Läppen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schleifen_mit_rotierendem_Werkzeug"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Strahlspanen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beißschneiden"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Brechen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Messerschneiden"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Reißen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Scherschneiden"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spalten"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Stoffeigenschaft_ändern"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Trennen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Umformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_breiigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_flüssigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_gas-_oder_dampfförmigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_ionisierten_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_aus_dem_plastischen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Löten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_Schweißen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Beschichten_durch_thermisches_Spritzen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Elektrostatisches_Beschichten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Wirbelsintern"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bestrahlen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Magnetisieren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Photochemische_Verfahren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Sintern_oder_Brennen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermomechanisches_Behandeln"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Umformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Wärmebehandeln"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Biegeumformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Druckumformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schubumformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zugdruckumformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Zugumformen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Blasformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kalandrieren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Modellieren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Pressformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spritzgießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Spritzpressen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Strangpressen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Ziehformen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bohren_oder_Senken_oder_Reiben"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Bürstenspanen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Drehen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fallen_oder_Raspeln"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fräsen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Hobeln_oder_Stoßen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Räumen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schaben_oder_Meißeln"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Sägen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Abtragen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Elektrochemisches_Abtragen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermisches_Abtragen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Chemisches_Reinigen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Lösemittelreinigen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Mechanisches_Reinigen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Reinigungsstrahlen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Strömungstechnisches_Reinigen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Thermisches_Reinigen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Druckdrücken"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Eindrücken"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Freiformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Gesenkformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Oberflächenveredelungsstrahlen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Umformstrahlen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Walzen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Druckgießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Niederdruckgießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schleudergießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schwerkraftgießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schäumen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Stranggießen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tauchformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_von_faserverstärkten_Kunststoffen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Züchten_von_Kristallen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Drücken"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Durchziehen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Innenhochdruck-Weitstauchen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Knickbauchen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Kragenziehen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tiefziehen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Nietverfahren"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen_bei_Blech-_Rohr-_und_Profilteilen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Umformen_drahtförmiger_Körper"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Fügen_durch_Presspassung"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Klammern"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Klemmen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Nageln_oder_Verstiften_oder_Einschlagen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Schrauben"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verkeilen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verspannen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Faserplatten"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Papier_und_Pappe"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Herstellung_von_Spanplatten"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Längen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Tiefen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Weiten"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Pressen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Sandformen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_durch_thermisches_Spritzen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_breiigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_flüssigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_gas-_oder_dampfförmigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_ionisierten_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_körnigen_oder_pulverförmigen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_plastischen_Zustand"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Urformen_aus_dem_span-_oder_faserförmigen_Zustand"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Schmieden"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Walzen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigen_durch_Ziehen"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/DIN8580#Verfestigungsstrahlen"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
