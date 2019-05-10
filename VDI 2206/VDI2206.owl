@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.hsu-ifa.de/ontologies/VDI2206#"
      xml:base="http://www.hsu-ifa.de/ontologies/VDI2206"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -76,9 +77,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf">
         <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#isPartOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:comment>an containment relation for hierarchical structures</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -89,7 +88,6 @@
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#hasChild">
         <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#hasParent"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:comment>an inheritance structure to model both, types of systems and their (real world) instances, i.e. children</rdfs:comment>
     </owl:ObjectProperty>
@@ -156,7 +154,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#hasParent">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:comment>an inheritance structure to model both, types of systems and their (real world) instances, i.e. children</rdfs:comment>
     </owl:ObjectProperty>
@@ -222,9 +219,7 @@
     <!-- http://www.hsu-ifa.de/ontologies/VDI2206#isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:comment>an part of relation for hierarchical structures</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -286,6 +281,14 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#Information">
         <rdfs:comment>Information exchanged between units of mechatronic systems are for example measured variables, control pulses or data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#InformationProcessing -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#InformationProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
     </owl:Class>
     
 
