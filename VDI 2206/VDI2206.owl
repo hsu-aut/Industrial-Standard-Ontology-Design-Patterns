@@ -73,6 +73,18 @@
     
 
 
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfSystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf">
