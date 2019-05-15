@@ -76,6 +76,17 @@ Furthermore, the Operator can be used to express dependencies between In- and Ou
     
 
 
+    <!-- http://www.hsu-ifa.de/ontologies/VDI3682#ProcessOperatorIsAssignedToTechnicalResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#ProcessOperatorIsAssignedToTechnicalResource">
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#TechnicalResourceIsAssignedToProcessOperator"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#Process"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#TechnicalResource"/>
+        <rdfs:comment>ObjectProperty that is used to indicate that a process operator is performed by a technical resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hsu-ifa.de/ontologies/VDI3682#TechnicalResourceIsAssignedToProcessOperator -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#TechnicalResourceIsAssignedToProcessOperator">
