@@ -24,51 +24,73 @@
     
 
 
-    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#ComponentIsPartOfFunctionalUnit -->
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#ComponentIsPartOfModule -->
 
-    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#ComponentIsPartOfFunctionalUnit">
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#ComponentIsPartOfModule">
         <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#isPartOf"/>
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#ModuleConsistsOfComponent"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
-        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Module"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnitConsistsOfComponent -->
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#ComponentIsPartOfSystem -->
 
-    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnitConsistsOfComponent">
-        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit"/>
-        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnitIsPartOfSystem -->
-
-    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnitIsPartOfSystem">
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#ComponentIsPartOfSystem">
         <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#isPartOf"/>
-        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfFunctionalUnit"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit"/>
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfComponent"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
         <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfFunctionalUnit -->
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#ModuleConsistsOfComponent -->
 
-    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfFunctionalUnit">
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#ModuleConsistsOfComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Module"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#ModuleIsPartOfSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#ModuleIsPartOfSystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#isPartOf"/>
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Module"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#SystemConsistsOfModule">
         <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#consistsOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
-        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Module"/>
     </owl:ObjectProperty>
     
 
@@ -280,15 +302,6 @@
     
 
 
-    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit -->
-
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit">
-        <rdfs:comment>Complex mechatronic systems generally comprise the synergetic integration of various mechatronic modules, i.e. system elements or components which are combined to form a group and together perform a specific function.</rdfs:comment>
-        <rdfs:label>Module</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.hsu-ifa.de/ontologies/VDI2206#Information -->
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#Information">
@@ -301,6 +314,15 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#InformationProcessing">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2206#Module -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#Module">
+        <rdfs:comment>Complex mechatronic systems generally comprise the synergetic integration of various mechatronic modules, i.e. system elements or components which are combined to form a group and together perform a specific function.</rdfs:comment>
+        <rdfs:label>Module</rdfs:label>
     </owl:Class>
     
 
@@ -342,7 +364,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#Component"/>
-            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#FunctionalUnit"/>
+            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#Module"/>
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI2206#System"/>
         </owl:members>
     </rdf:Description>
