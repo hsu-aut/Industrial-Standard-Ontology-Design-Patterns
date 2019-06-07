@@ -6,9 +6,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ISO22400-2="http://www.hsu-ifa.de/ontologies/ISO22400-2#">
     <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl">
-        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <rdfs:comment>Authored by Constantin Hildebrandt</rdfs:comment>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -24,45 +26,45 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/acronym -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#acronym -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/acronym"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#acronym"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/application -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#application -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/application"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#application"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/formula -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#formula -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/formula"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#formula"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/notesAndExplanation -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#notesAndExplanation -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/notesAndExplanation"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#notesAndExplanation"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/ratingMax -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#ratingMax -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/ratingMax"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#ratingMax"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/ratingMin -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#ratingMin -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/ratingMin"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#ratingMin"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/ratingTrend -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2#ratingTrend -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/ratingTrend"/>
+    <owl:AnnotationProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2#ratingTrend"/>
     
 
 
@@ -324,8 +326,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualOrderExecutionTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>AOET</dc:acronym>
-        <dc:notesAndExplanation>The actual order execution time is the time difference between start time and end time of a production order. It includes the busy time, the transport and queuing time.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>AOET</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual order execution time is the time difference between start time and end time of a production order. It includes the busy time, the transport and queuing time.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -334,8 +336,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualPersonnelAttendanceTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>APAT</dc:acronym>
-        <dc:notesAndExplanation>The actual personnel attendance time is the total time that a worker is actually available to work on production orders. It does not include time for company authorized break periods (i.e. lunch). It is the difference between login and logout excluding breaks.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>APAT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual personnel attendance time is the total time that a worker is actually available to work on production orders. It does not include time for company authorized break periods (i.e. lunch). It is the difference between login and logout excluding breaks.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -344,8 +346,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualPersonnelWorkTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>APWT</dc:acronym>
-        <dc:notesAndExplanation>The actual personnel work time is the time that a personnel needs for the execution of a production order.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>APWT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual personnel work time is the time that a personnel needs for the execution of a production order.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -354,8 +356,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualProductionTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>APT</dc:acronym>
-        <dc:notesAndExplanation>The actual production time is the time during a work unit is producing. It includes only the valueadding functions.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>APT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual production time is the time during a work unit is producing. It includes only the valueadding functions.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -364,8 +366,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualQueuingTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>AQT</dc:acronym>
-        <dc:notesAndExplanation>The actual queuing time is the time in which the material is not in progress of the manufacturing process and also is not on transport.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>AQT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual queuing time is the time in which the material is not in progress of the manufacturing process and also is not on transport.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -374,8 +376,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualSetupTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>ASUT</dc:acronym>
-        <dc:notesAndExplanation>The actual setup time is the time actually consumed for the preparation of an order at a work unit.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>ASUT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual setup time is the time actually consumed for the preparation of an order at a work unit.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -392,6 +394,20 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualToPlannedScrapRatio">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedScrapQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ScrapQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -506,7 +522,12 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The actual to planned scrap ratio is a limitation of the planned scrap. The indicator should be smaller than 100%. In this case the produced scrap will be within the planned limitation.</dc:notesAndExplanation>
+        <ISO22400-2:application>The actual to planned scrap ratio is a limitation of the planned scrap. The indicator should be smaller than 100%. In this case the produced scrap will be within the planned limitation.</ISO22400-2:application>
+        <ISO22400-2:formula>Actual to planned scrap ratio = SQ / PSQ</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The indicator supports the monitoring of the target value. The planned scrap quantity (which can be expected) is normally already defined in the ERP system in order to ensure also the necessary material allocation. This indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -515,8 +536,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTransportTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>ATT</dc:acronym>
-        <dc:notesAndExplanation>The actual setup time is the time actually consumed for the preparation of an order at a work unit.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>ATT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual setup time is the time actually consumed for the preparation of an order at a work unit.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -525,8 +546,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitBusyTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>AUBT</dc:acronym>
-        <dc:notesAndExplanation>The actual unit busy time is the time that a work unit is used for the execution of a production order.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>AUBT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual unit busy time is the time that a work unit is used for the execution of a production order.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -535,8 +556,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitDelayTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>ADET</dc:acronym>
-        <dc:notesAndExplanation>The actual unit delay times are actual times associated with malfunction-caused interrupts, minor stoppages, and other unplanned time intervals that occur while tasks are being completed that lead to unwanted extension of the order processing time</dc:notesAndExplanation>
+        <ISO22400-2:acronym>ADET</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual unit delay times are actual times associated with malfunction-caused interrupts, minor stoppages, and other unplanned time intervals that occur while tasks are being completed that lead to unwanted extension of the order processing time</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -545,8 +566,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitDownTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>ADOT</dc:acronym>
-        <dc:notesAndExplanation>The actual unit down time is the time when the work unit is not running with orders, although it is available.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>ADOT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual unit down time is the time when the work unit is not running with orders, although it is available.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -555,8 +576,8 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitProcessingTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualTimes"/>
-        <dc:acronym>AUPT</dc:acronym>
-        <dc:notesAndExplanation>The actual unit processing time is the time needed for setup and for the production</dc:notesAndExplanation>
+        <ISO22400-2:acronym>AUPT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The actual unit processing time is the time needed for setup and for the production</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -565,6 +586,20 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#AllocationEfficiency">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitBusyTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedBusyTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -657,7 +692,12 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Allocation efficiency is the ratio between the real allocation time of a work unit and planned time for allocating the machine.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Allocation efficiency is the ratio between the real allocation time of a work unit and planned time for allocating the machine.</ISO22400-2:application>
+        <ISO22400-2:formula>Allocation efficiency = AUBT / PBT</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The allocation efficiency indicates how strongly the capacity of the machine is already used and how much capacity is still available.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>Max: 100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -666,6 +706,20 @@
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#AllocationRatio">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualOrderExecutionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitBusyTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -774,13 +828,14 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:application>The Allocation ratio is the relationship of the complete busy time over all involved work units and work centres to the throughput time of a production order.
-The Allocation ratio is an index for the Work in Progress inventory (WIP), the wait times and delay times. To much WIP reduces liquidity and to much wait and down time extend the throughput time</dc:application>
-        <dc:notesAndExplanation>Because the throughput time is related to a complete production order, the smallest entity is a single production order. The allocation time is the summary about all production order sequences which are involved in the order selection.</dc:notesAndExplanation>
-        <dc:ratingMax>&gt;100%</dc:ratingMax>
-        <dc:ratingMin>0%</dc:ratingMin>
-        <dc:ratingTrend>Trend: the higher the better
-By overlapping of production operations the rate can be bigger than 100%</dc:ratingTrend>
+        <ISO22400-2:application>The Allocation ratio is the relationship of the complete busy time over all involved work units and work centres to the throughput time of a production order.
+The Allocation ratio is an index for the Work in Progress inventory (WIP), the wait times and delay times. To much WIP reduces liquidity and to much wait and down time extend the throughput time</ISO22400-2:application>
+        <ISO22400-2:formula>Allocation ratio = AUBT / AOET</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>Because the throughput time is related to a complete production order, the smallest entity is a single production order. The allocation time is the summary about all production order sequences which are involved in the order selection.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>&gt;100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>Trend: the higher the better
+By overlapping of production operations the rate can be bigger than 100%</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -789,8 +844,8 @@ By overlapping of production operations the rate can be bigger than 100%</dc:rat
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ArithmeticAverage">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>X_</dc:acronym>
-        <dc:notesAndExplanation>If, in a series of n measurements, each measured value x1,…,xi,…,xn was measured independently based on repetition conditions, then x_ (“x-bar”) represents the arithmetic average value from these n individual values.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>X_</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>If, in a series of n measurements, each measured value x1,…,xi,…,xn was measured independently based on repetition conditions, then x_ (“x-bar”) represents the arithmetic average value from these n individual values.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -799,6 +854,20 @@ By overlapping of production operations the rate can be bigger than 100%</dc:rat
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Availability">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualProductionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedBusyTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -904,7 +973,12 @@ By overlapping of production operations the rate can be bigger than 100%</dc:rat
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Availability indicates how strongly the capacity of a work unit for the production is used in relation to the available capacity.</dc:notesAndExplanation>
+        <ISO22400-2:application>Availability indicates how strongly the capacity of a work unit for the production is used in relation to the available capacity.</ISO22400-2:application>
+        <ISO22400-2:formula>Availability = APT / PBT</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The term availability is also called degree of utilisation or capacity factor.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -913,8 +987,8 @@ By overlapping of production operations the rate can be bigger than 100%</dc:rat
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#AverageOfAverageValues">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>X__</dc:acronym>
-        <dc:notesAndExplanation>X__ is calculated from the average of single sample average values ( X_ ).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>X__</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>X__ is calculated from the average of single sample average values ( X_ ).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1028,8 +1102,12 @@ By overlapping of production operations the rate can be bigger than 100%</dc:rat
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Indicators to measure the consumption of energy are used by enterprises for energy savings, environmental protection, and cost reduction. Though energy can be considered as a form of raw material, it helps to evaluate the consumption of energy using distinct indicators.
-Comprehensive energy consumption is the ratio between all the energy consumed in a production cycle and produced quantity.</dc:notesAndExplanation>
+        <ISO22400-2:application>Indicators to measure the consumption of energy are used by enterprises for energy savings, environmental protection, and cost reduction. Though energy can be considered as a form of raw material, it helps to evaluate the consumption of energy using distinct indicators.
+Comprehensive energy consumption is the ratio between all the energy consumed in a production cycle and produced quantity.</ISO22400-2:application>
+        <ISO22400-2:notesAndExplanation>Energy consumption is an important factor impacting the production costs and final profits.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>related to product</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1038,8 +1116,8 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumablesInventory">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>CI</dc:acronym>
-        <dc:notesAndExplanation>The materials of which the quantity or quality are changed during the production such as a catalyst. (Consumables have been defined in detail in IEC 62264-1.)</dc:notesAndExplanation>
+        <ISO22400-2:acronym>CI</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The materials of which the quantity or quality are changed during the production such as a catalyst. (Consumables have been defined in detail in IEC 62264-1.)</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1048,8 +1126,8 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumedMaterial">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>CM</dc:acronym>
-        <dc:notesAndExplanation>In the process industry (e.g. oil refining and chemicals), consumed material is usually used in the denominator to calculate the related KPIs. In some industrial processes, input can be less than the output. Many chemical and physical changes occur during production, and product yield has fluctuation and uncertainty. It is therefore difficult to calculate and measure the output.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>CM</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>In the process industry (e.g. oil refining and chemicals), consumed material is usually used in the denominator to calculate the related KPIs. In some industrial processes, input can be less than the output. Many chemical and physical changes occur during production, and product yield has fluctuation and uncertainty. It is therefore difficult to calculate and measure the output.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1060,6 +1138,20 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Maintenance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#CorrectiveMaintenanceTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PreventiveMaintenanceTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -1163,7 +1255,13 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Corrective Maintenance Ratio reveals the magnitude of corrective tasks within all maintenance activities performed in a work unit. This ratio shows the lack of system reliability and should be minimized.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Corrective Maintenance Ratio reveals the magnitude of corrective tasks within all maintenance activities performed in a work unit. This ratio shows the lack of system reliability and should be minimized.</ISO22400-2:application>
+        <ISO22400-2:formula>Corrective maintenance ratio = CMT / (CMT + PMT)</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:notesAndExplanation>This ratio gives the idea of the time spent in corrective tasks on work units compared with the whole maintenance time. The lower the ratio the better.
+It should be remarked that excessive preventive maintenance would have the same effect on the ratio by increasing the overall maintenance function.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingTrend>the lower the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1172,8 +1270,8 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#CorrectiveMaintenanceTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms"/>
-        <dc:acronym>CMT</dc:acronym>
-        <dc:notesAndExplanation>That part of the maintenance time, during which corrective maintenance is performed on an item, including technical delays and logistic delays inherent in corrective maintenance (IEC 60050-191).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>CMT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>That part of the maintenance time, during which corrective maintenance is performed on an item, including technical delays and logistic delays inherent in corrective maintenance (IEC 60050-191).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1184,6 +1282,34 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ArithmeticAverage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LowerSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#StandardDeviation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UpperSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -1296,7 +1422,12 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Critical machine capability index (Cmk) indicates the ability of a machine or a work mechanism to produce the specified quality. The evaluation should be executed if possible by exclusion of other process influences. The method will be used mainly with the approval from machines in combination with products</dc:notesAndExplanation>
+        <ISO22400-2:application>The Critical machine capability index (Cmk) indicates the ability of a machine or a work mechanism to produce the specified quality. The evaluation should be executed if possible by exclusion of other process influences. The method will be used mainly with the approval from machines in combination with products</ISO22400-2:application>
+        <ISO22400-2:notesAndExplanation>Cmk is a critical characteristic value of a short time capability investigation. Usually the normal distribution will be the statistical method. The machine capability value is usually defined by customer requirements. Typical value is Cm &gt; 1,66. The value can be used for characteristic with an upper and a lower specification limits.
+The Cmk can be calculated as (Cmku) index based on the lower specification limit and as the (Cmko) index based on the upper specification limit. The lower Cmk will be the relevant value of both calculations.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite, if s à 0</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>&lt; 0, if x is out of the specification limits</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1307,6 +1438,34 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#AverageOfAverageValues"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LowerSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UpperSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Variance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -1410,8 +1569,18 @@ Comprehensive energy consumption is the ratio between all the energy consumed in
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Critical process capability index should indicate based on statistic methods as soon as possible if the production process will produce the product according to the committed quality specifications.
-The Critical process capability index (Cpk) is the relationship between the dispersion of a process and the upper or lower specification limit and its averages. The method compares the range between the upper or lower specification limit and its averages and the 3-sigma process dispersion. A process is usually called capable if the process capability index is &gt; 1,33.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Critical process capability index should indicate based on statistic methods as soon as possible if the production process will produce the product according to the committed quality specifications.
+The Critical process capability index (Cpk) is the relationship between the dispersion of a process and the upper or lower specification limit and its averages. The method compares the range between the upper or lower specification limit and its averages and the 3-sigma process dispersion. A process is usually called capable if the process capability index is &gt; 1,33.</ISO22400-2:application>
+        <ISO22400-2:notesAndExplanation>The measurement has to be done in regular time steps or after
+defined quantity intervals with small samples (1-25).
+sˆ will be calculated based on a confidence factor from the
+standard deviation, depending on the sample inspection size.
+The x will be calculated as the average of the averages of all small samples.
+The Cpk can be calculated as (Cpku) index based on the lower specification limit and as the (Cpko) index based on the upper specification limit. The lower Cpk will be the relevant value of both calculations.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite, if sˆ à 0</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0, if sˆ
+is very big</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1420,7 +1589,7 @@ The Critical process capability index (Cpk) is the relationship between the disp
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Day">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedPeriods"/>
-        <dc:notesAndExplanation>The day is the planned maximum time available for production and maintenance tasks. This depends on the number of shifts being run. For example, a single shift corresponds to 8 hours that are scheduled when a production resource is planned to be used to perform the tasks.</dc:notesAndExplanation>
+        <ISO22400-2:notesAndExplanation>The day is the planned maximum time available for production and maintenance tasks. This depends on the number of shifts being run. For example, a single shift corresponds to 8 hours that are scheduled when a production resource is planned to be used to perform the tasks.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1429,6 +1598,27 @@ The Critical process capability index (Cpk) is the relationship between the disp
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Effectiveness">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualProductionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedRuntimePerUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -1543,7 +1733,12 @@ The Critical process capability index (Cpk) is the relationship between the disp
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Effectiveness is the index for the performance of a work unit. It represents the relationship between the planned target cycle and the actual cycle. The effectiveness can be calculated in short periods and indicates how effective a work unit will be during the production time.</dc:notesAndExplanation>
+        <ISO22400-2:application>Effectiveness is the index for the performance of a work unit. It represents the relationship between the planned target cycle and the actual cycle. The effectiveness can be calculated in short periods and indicates how effective a work unit will be during the production time.</ISO22400-2:application>
+        <ISO22400-2:formula>Effectiveness = PRU * PQ / APT</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>Effectiveness is also called efficiency factor. This indicator is usable as online indicator for the worker level. The 100% can be exceeded, if the planned target cycle is bigger than the actual cycle.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1560,6 +1755,20 @@ The Critical process capability index (Cpk) is the relationship between the disp
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#EquipmentProductionCapacity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -1672,11 +1881,16 @@ The Critical process capability index (Cpk) is the relationship between the disp
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Production capacity and the load rate of equipment are important indicators in a manufacturing enterprise. The Equipment Load Rate KPI is calculated as: Equipment Load Rate = Produced Quantity (PQ) / Equipment Production Capacity
+        <ISO22400-2:application>Production capacity and the load rate of equipment are important indicators in a manufacturing enterprise. The Equipment Load Rate KPI is calculated as: Equipment Load Rate = Produced Quantity (PQ) / Equipment Production Capacity
 Equipment production capacity is either “rated” or “maximum”, as follows:
 a) Maximum Equipment Production Capacity: the upper limit value of production demarcated before the equipment delivery.
 b) Rated Equipment Production Capacity: the upper limit value of production promised the stable operation of the equipment.
-The Equipment Load Rate KPI provides information about the ratio of produced quantity (PQ) in relation to the maximum equipment production capacity. It is an indicator to reflect the production state of equipment and production efficiency. It helps to reflect the technical performance and utilization of equipment and by researching the usage of equipment.</dc:notesAndExplanation>
+The Equipment Load Rate KPI provides information about the ratio of produced quantity (PQ) in relation to the maximum equipment production capacity. It is an indicator to reflect the production state of equipment and production efficiency. It helps to reflect the technical performance and utilization of equipment and by researching the usage of equipment.</ISO22400-2:application>
+        <ISO22400-2:formula>Equipment load ratio = PQ / EPC</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The value of Equipment Load Rate impacts the production costs and, ultimately, profits.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>If the produced quantity is below the Rated Equipment Production Capacity, the higher, the better. It is possible to impact the security and reliability of equipment when the produced quantity is above the Rated Equipment Production Capacity. There is also a lower limit of Equipment Load Rate to some equipment, below which it cannot be produced.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1685,8 +1899,8 @@ The Equipment Load Rate KPI provides information about the ratio of produced qua
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#EquipmentProductionCapacity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>EPC</dc:acronym>
-        <dc:notesAndExplanation>Equipment production capacity is an important indicator in a manufacturing enterprise, which can be used to calculate the KPI” Equipment Load Rate”. Equipment production capacity is either “rated” or “maximum”, as follows:</dc:notesAndExplanation>
+        <ISO22400-2:acronym>EPC</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>Equipment production capacity is an important indicator in a manufacturing enterprise, which can be used to calculate the KPI” Equipment Load Rate”. Equipment production capacity is either “rated” or “maximum”, as follows:</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1695,8 +1909,8 @@ The Equipment Load Rate KPI provides information about the ratio of produced qua
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#EstimatedDeviation">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>SIGMA</dc:acronym>
-        <dc:notesAndExplanation>The estimated deviation is calculated by the average value of the standard deviation from a sequence of samples with constant random inspection size, multiplied by a confidence factor depending on the random inspection size of the standard deviations.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>SIGMA</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The estimated deviation is calculated by the average value of the standard deviation from a sequence of samples with constant random inspection size, multiplied by a confidence factor depending on the random inspection size of the standard deviations.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1705,8 +1919,8 @@ The Equipment Load Rate KPI provides information about the ratio of produced qua
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#FailureEvent">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms"/>
-        <dc:acronym>FE</dc:acronym>
-        <dc:notesAndExplanation>The termination of the ability of an item to perform a required function (IEC 60050-191).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>FE</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The termination of the ability of an item to perform a required function (IEC 60050-191).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1717,6 +1931,20 @@ The Equipment Load Rate KPI provides information about the ratio of produced qua
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ScrapQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -1829,8 +2057,13 @@ The Equipment Load Rate KPI provides information about the ratio of produced qua
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Fall off ratio indicates the fall off quantity in each production operation step in relation to the produced quantity in the first operation.
-The KPI can be used in concatenated processes, where are mother products (e.g. motherboard) which will be produced in the first manufacturing step and will have scrap in the further operation steps. The mother products can be serialized in the first manufacturing step. The indicator has an influence on the planning quality (planned scrap) and on the production quality per manufacturing step as well as the material wastage.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Fall off ratio indicates the fall off quantity in each production operation step in relation to the produced quantity in the first operation.
+The KPI can be used in concatenated processes, where are mother products (e.g. motherboard) which will be produced in the first manufacturing step and will have scrap in the further operation steps. The mother products can be serialized in the first manufacturing step. The indicator has an influence on the planning quality (planned scrap) and on the production quality per manufacturing step as well as the material wastage.</ISO22400-2:application>
+        <ISO22400-2:formula>Fall off ratio = SQ / PQ of the first production order sequence</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This indicator is usable as online indicator for the worker level. In process industry, such as oil refining and chemical industry, usually use “consumed material” as denominator to calculate the related KPIs. It can be used &quot;Finished Goods Ratio&quot; (section 8.25) to calculate the quality.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1839,8 +2072,8 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#FinishedGoodsInventory">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>FGI</dc:acronym>
-        <dc:notesAndExplanation>The stock point at the end of a routing is either a crib inventory location or finished goods inventory. Crib inventories are used to gather different parts within the plant before further processing or assembly. For instance, a routing to produce gear assemblies may be fed by several crib inventories containing gears, housings, crankshafts and so on. Finished goods inventory is where end items are held prior to shipping to the customer.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>FGI</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The stock point at the end of a routing is either a crib inventory location or finished goods inventory. Crib inventories are used to gather different parts within the plant before further processing or assembly. For instance, a routing to produce gear assemblies may be fed by several crib inventories containing gears, housings, crankshafts and so on. Finished goods inventory is where end items are held prior to shipping to the customer.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -1851,6 +2084,20 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumedMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#GoodQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -1963,7 +2210,12 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>In the process industry (e.g. oil refining and chemicals), “consumed material” is usually used in the denominator to calculate the related KPIs. In some industrial processes, input can be less than the output. Many chemical and physical changes occur during production, and product yield has fluctuation and uncertainty. It is therefore difficult to calculate and measure the output. The Finished Goods Ratio is the ratio of the good quantity produced (GQ) to the consumed material.</dc:notesAndExplanation>
+        <ISO22400-2:application>In the process industry (e.g. oil refining and chemicals), “consumed material” is usually used in the denominator to calculate the related KPIs. In some industrial processes, input can be less than the output. Many chemical and physical changes occur during production, and product yield has fluctuation and uncertainty. It is therefore difficult to calculate and measure the output. The Finished Goods Ratio is the ratio of the good quantity produced (GQ) to the consumed material.</ISO22400-2:application>
+        <ISO22400-2:formula>Finished goods ratio = GQ / CM</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This indicator is suitable as on-line characteristic number for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -1974,6 +2226,20 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#GoodQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#InspectedPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -2086,7 +2352,12 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The First pass yield (FPY) is a direct indicator for the process quality related to work place and product. The FPY considers the rate of yield over all production order operations. When the indicator increases then defect costs and material wastage will be reduced and the output improved.</dc:notesAndExplanation>
+        <ISO22400-2:application>The First pass yield (FPY) is a direct indicator for the process quality related to work place and product. The FPY considers the rate of yield over all production order operations. When the indicator increases then defect costs and material wastage will be reduced and the output improved.</ISO22400-2:application>
+        <ISO22400-2:formula>FPY = GP / IP</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>For identifying the first pass it is necessary to label each single product unit with an identification number (serial number). The FPY designates the percentage of products, which fulfil the quality requirements in the first process run without reworks (good parts). The FPY stands in reciprocal relationship to the defect costs. If the FPY increases, then the defect costs will be less. This indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -2095,8 +2366,8 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#GoodPart">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>GP</dc:acronym>
-        <dc:notesAndExplanation>A good part is an individual identifiable part, e.g. by serialization, which meets the quality requirements.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>GP</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>A good part is an individual identifiable part, e.g. by serialization, which meets the quality requirements.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2105,8 +2376,8 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#GoodQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>GQ</dc:acronym>
-        <dc:notesAndExplanation>The good quantity is the produced quantity that meets quality requirements.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>GQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The good quantity is the produced quantity that meets quality requirements.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2115,8 +2386,8 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#InspectedPart">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>IP</dc:acronym>
-        <dc:notesAndExplanation>An inspected part is an individual identifiable part, e.g. by serialization, which was tested against the quality requirements.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>IP</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>An inspected part is an individual identifiable part, e.g. by serialization, which was tested against the quality requirements.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2125,9 +2396,9 @@ The KPI can be used in concatenated processes, where are mother products (e.g. m
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#IntegratedGoodQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>IGQ</dc:acronym>
-        <dc:notesAndExplanation>Products in the process industry are closely related to each other since partial amounts of a specific quantity of finished goods at a particular grade or quality can be converted to another product with a different grade or quality. For example, if the quality of a product has not reached a higher level “A”, it can be sold as a product with a lower quality level “B”. Then the ratio of products of level “B” raises as the ratio of products of level “A” declines. Therefore, KPIs are calculated from the view of all related products, such as the level “A” and level “B” products mentioned above.
-In this case, the KPI “Integrated Goods Ratio” is used instead of “Finished Goods Ratio” and “Integrated good quantity (IGQ)” is used instead of “Good quantity (GQ)” Since IGQ represents the quantity of all products during production, it is important to make sure that all products are measured in the same unit, or can be converted to the same unit. A list of conversion coefficients can be used to unify the measurement modes of different products.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>IGQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>Products in the process industry are closely related to each other since partial amounts of a specific quantity of finished goods at a particular grade or quality can be converted to another product with a different grade or quality. For example, if the quality of a product has not reached a higher level “A”, it can be sold as a product with a lower quality level “B”. Then the ratio of products of level “B” raises as the ratio of products of level “A” declines. Therefore, KPIs are calculated from the view of all related products, such as the level “A” and level “B” products mentioned above.
+In this case, the KPI “Integrated Goods Ratio” is used instead of “Finished Goods Ratio” and “Integrated good quantity (IGQ)” is used instead of “Good quantity (GQ)” Since IGQ represents the quantity of all products during production, it is important to make sure that all products are measured in the same unit, or can be converted to the same unit. A list of conversion coefficients can be used to unify the measurement modes of different products.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2138,6 +2409,20 @@ In this case, the KPI “Integrated Goods Ratio” is used instead of “Finishe
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumedMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#IntegratedGoodQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -2250,8 +2535,12 @@ In this case, the KPI “Integrated Goods Ratio” is used instead of “Finishe
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Products in the process industry are closely related to each other since partial amounts of a specific quantity of finished goods at a particular grade or quality can be converted to another product with a different grade or quality. For example, if the quality of a product has not reached a higher level “A”, it can be sold as a product with a lower quality level “B”. Then the ratio of products of level “B” rises as the ratio of products of level “A” declines. Therefore, KPIs are calculated from the view of all related products, such as the level “A” and level “B” products mentioned above. In this case, the KPI “Integrated Goods Ratio” is used instead of “Finished Goods Ratio”. Since &quot;integrated goods&quot; represents the quantity of all products during production, it is important to make sure that all products are measured in the same unit, or can be converted to the same unit. A list of conversion coefficients can be used to unify the measurement modes of different products.
-The Integrated Goods Ratio is the relationship of the produced quantity to the consumed material.</dc:notesAndExplanation>
+        <ISO22400-2:application>Products in the process industry are closely related to each other since partial amounts of a specific quantity of finished goods at a particular grade or quality can be converted to another product with a different grade or quality. For example, if the quality of a product has not reached a higher level “A”, it can be sold as a product with a lower quality level “B”. Then the ratio of products of level “B” rises as the ratio of products of level “A” declines. Therefore, KPIs are calculated from the view of all related products, such as the level “A” and level “B” products mentioned above. In this case, the KPI “Integrated Goods Ratio” is used instead of “Finished Goods Ratio”. Since &quot;integrated goods&quot; represents the quantity of all products during production, it is important to make sure that all products are measured in the same unit, or can be converted to the same unit. A list of conversion coefficients can be used to unify the measurement modes of different products.
+The Integrated Goods Ratio is the relationship of the produced quantity to the consumed material.</ISO22400-2:application>
+        <ISO22400-2:formula>Finished goods ratio = IGQ / CM</ISO22400-2:formula>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -2270,6 +2559,48 @@ The Integrated Goods Ratio is the relationship of the produced quantity to the c
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Inventory"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasComplexArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ThroughputRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ArithmeticAverage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumablesInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#FinishedGoodsInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#RawMaterialsInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#WorkInProgressInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -2373,10 +2704,16 @@ The Integrated Goods Ratio is the relationship of the produced quantity to the c
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The definition of indicators for inventory is quite important in the process industry where production is organized based on inventory. How long the product is stored may affect the quality and cost. The four types of inventory are described below.
+        <ISO22400-2:application>The definition of indicators for inventory is quite important in the process industry where production is organized based on inventory. How long the product is stored may affect the quality and cost. The four types of inventory are described below.
 1) Raw materials (RM): The materials that are changed into finished goods though the production.
 2) Consumables (CI): The materials of which the quantity or quality is changed during the production, such as a catalyst. (Consumables have been defined in detail in IEC 62264-1.) 3) Crib and finished goods inventory (FGI): The stock point at the end of a routing is either a crib inventory location or finished goods inventory. Crib inventories are used to gather different parts within the plant before further processing or assembly. For instance, a routing to produce gear assemblies may be fed by several crib inventories containing gears, housings, crankshafts and so on. Finished goods inventory is where end items are held prior to shipping to the customer.
-4) Work in process inventory (WIP): The inventory between the start and end points of a product routing is called Work in process (WIP). Since routing begin and end at stock points, WIP is the entire product between, but not including, the ending stock points. Although in colloquial use WIP often includes crib inventories, a distinction is made between crib inventory and WIP for clarification. Inventory Turns is defined as the ratio of the throughput (TH) to average inventory. It is commonly used to measure the efficiency of inventory, and represents the average number of times the inventory stock is replenished or turned over.</dc:notesAndExplanation>
+4) Work in process inventory (WIP): The inventory between the start and end points of a product routing is called Work in process (WIP). Since routing begin and end at stock points, WIP is the entire product between, but not including, the ending stock points. Although in colloquial use WIP often includes crib inventories, a distinction is made between crib inventory and WIP for clarification. Inventory Turns is defined as the ratio of the throughput (TH) to average inventory. It is commonly used to measure the efficiency of inventory, and represents the average number of times the inventory stock is replenished or turned over.</ISO22400-2:application>
+        <ISO22400-2:formula>Inventory turns = Throughput / average inventory</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>Exactly which inventory is included depends on what is being measured. For instance, in a warehouse, all inventory is FGI, so turns are given by TH / FGI. In a plant, generally both WIP and FGI are considered, so turns are given by TH / (WIP+FGI). There are also other inventory turns in different departments, such as Raw Material Inventory Turns (TH/RMI), Consumables Inventory Turns (TH/CI), and so on. Attention needs to be paid to the boundary of the Inventory Turns in a Manufacturing Execution System. Usually, Inventory Turns in a Manufacturing Execution System only focuses on the inventory of WIP, while the Inventory Turns of RMI and FGI are usually the focus of an Enterprise Resource Planning system.
+It is essential to make sure that throughput and inventory are measured in the same unit.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>related to product</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -2399,8 +2736,8 @@ The Integrated Goods Ratio is the relationship of the produced quantity to the c
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Loss">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:notesAndExplanation>Scrap and reworking are not measured in the process industries. Instead, the focus is on loss, where: Integrated Goods Ratio + Loss Ratio = 1
-Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Other Loss Ratio</dc:notesAndExplanation>
+        <ISO22400-2:notesAndExplanation>Scrap and reworking are not measured in the process industries. Instead, the focus is on loss, where: Integrated Goods Ratio + Loss Ratio = 1
+Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Other Loss Ratio</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2409,8 +2746,8 @@ Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Oth
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LowerSpecificationLimit">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>LSL</dc:acronym>
-        <dc:notesAndExplanation>The lower specification limit corresponds to the lower specification border related to the characteristic of a product.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>LSL</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The lower specification limit corresponds to the lower specification border related to the characteristic of a product.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2419,6 +2756,27 @@ Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Oth
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MachineCapabilityIndex">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LowerSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#StandardDeviation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UpperSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -2533,7 +2891,13 @@ Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Oth
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Machine capability index (Cm) indicates the ability of a machine or a work mechanism to produce the specified quality. The evaluation should be executed if possible by exclusion of other process influences. The method will be used mainly with the approval from machines in combination with products</dc:notesAndExplanation>
+        <ISO22400-2:application>The Machine capability index (Cm) indicates the ability of a machine or a work mechanism to produce the specified quality. The evaluation should be executed if possible by exclusion of other process influences. The method will be used mainly with the approval from machines in combination with products</ISO22400-2:application>
+        <ISO22400-2:formula>Cm = (USL - LSL) / (6 * s)</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>the higher, the better
+Cm is a characteristic value of a short time capability investigation. Usually the normal distribution will be the statistical method. The machine capability value is usually defined by customer requirements. Typical value is Cm &gt; 1,66. The value can be used only for characteristic with upper and lower specification limits.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite, if s à 0</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0, if s is very big</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -2550,8 +2914,8 @@ Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Oth
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Elements"/>
-        <dc:notesAndExplanation>Definitions of maintenance elements have been extracted from the standard IEC 60050-191 ed1.0 International Electro-technical Vocabulary. Chapter 191: Dependability and quality of service.
-NOTE The term „item‟ used in the definitions below applies to the „work unit‟ in this standard.</dc:notesAndExplanation>
+        <ISO22400-2:notesAndExplanation>Definitions of maintenance elements have been extracted from the standard IEC 60050-191 ed1.0 International Electro-technical Vocabulary. Chapter 191: Dependability and quality of service.
+NOTE The term „item‟ used in the definitions below applies to the „work unit‟ in this standard.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2560,8 +2924,8 @@ NOTE The term „item‟ used in the definitions below applies to the „work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaximumEquipmentProductionCapacity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>MEPC</dc:acronym>
-        <dc:notesAndExplanation>The upper limit value of production demarcate before the equipment delivery.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>MEPC</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The upper limit value of production demarcate before the equipment delivery.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -2572,6 +2936,20 @@ NOTE The term „item‟ used in the definitions below applies to the „work un
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Maintenance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#FailureEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OperatingTimeBetweenFailures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -2675,8 +3053,13 @@ NOTE The term „item‟ used in the definitions below applies to the „work un
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Mean operating time between failures (MTBF) is an indicator of expected system reliability calculated on a statistical basis from the known failure rates of various components of the work unit.
-It represents the expectation of the operating time between failures (IEC 60050-191), It is a statistical approximation of how long a work unit should last before failure.</dc:notesAndExplanation>
+        <ISO22400-2:application>Mean operating time between failures (MTBF) is an indicator of expected system reliability calculated on a statistical basis from the known failure rates of various components of the work unit.
+It represents the expectation of the operating time between failures (IEC 60050-191), It is a statistical approximation of how long a work unit should last before failure.</ISO22400-2:application>
+        <ISO22400-2:notesAndExplanation>MTBF numbers are usually stated in terms of hours.
+The indicator is calculated in each work unit. Every time a failure happens, a new TBFi is obtained to calculate the MTBF.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -2687,6 +3070,20 @@ It represents the expectation of the operating time between failures (IEC 60050-
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Maintenance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#FailureEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#TimeToFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -2790,9 +3187,14 @@ It represents the expectation of the operating time between failures (IEC 60050-
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Mean Time To Failure (MTTF) is an indicator of expected system reliability calculated on a statistical basis from the known failure rates of various components of the work unit.
+        <ISO22400-2:application>Mean Time To Failure (MTTF) is an indicator of expected system reliability calculated on a statistical basis from the known failure rates of various components of the work unit.
 
-It represents the expectation of the time to failure. (IEC 60050-191). MTTF is used for both non repaired items and repairable items. It is equivalent to MTBF in case of repairable items.</dc:notesAndExplanation>
+It represents the expectation of the time to failure. (IEC 60050-191). MTTF is used for both non repaired items and repairable items. It is equivalent to MTBF in case of repairable items.</ISO22400-2:application>
+        <ISO22400-2:notesAndExplanation>MTTF numbers are usually stated in terms of hours.
+The indicator is calculated in each work unit. Every time a failure happens, a new TTFi is obtained to calculate the MTTF.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -2803,6 +3205,20 @@ It represents the expectation of the time to failure. (IEC 60050-191). MTTF is u
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Maintenance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#FailureEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#TimeToRestoration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -2906,15 +3322,48 @@ It represents the expectation of the time to failure. (IEC 60050-191). MTTF is u
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Mean Time To Restoration (MTTR) is the average time that an item required to restore a failed component in a work unit. It represents the expectation of the time to restoration (IEC 60050-191).</dc:notesAndExplanation>
+        <ISO22400-2:application>Mean Time To Restoration (MTTR) is the average time that an item required to restore a failed component in a work unit. It represents the expectation of the time to restoration (IEC 60050-191).</ISO22400-2:application>
+        <ISO22400-2:notesAndExplanation>MTTR numbers are usually stated in terms of hours.
+The indicator is calculated in each work unit. Every time a failure has been restored, a new TTRi is obtained to calculate the MTTR.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
 
-    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#NEE -->
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#NetEquipmentEffectiveness -->
 
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#NEE">
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#NetEquipmentEffectiveness">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasComplexArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Effectiveness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasComplexArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityRatio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitProcessingTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedBusyTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -3020,122 +3469,12 @@ It represents the expectation of the time to failure. (IEC 60050-191). MTTF is u
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Net equipment effectiveness (NEE) index is comparable with the OEE index but it includes the setup time within the availability. The NEE index indicates losses by work unit delays, cycle time losses and losses by rework.</dc:notesAndExplanation>
-    </owl:Class>
-    
-
-
-    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OEE -->
-
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OEE">
-        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>batch</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>continuous</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>discrete</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:unionOf>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UserGroup"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>Chief</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>Management</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>Master</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:unionOf>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Timing"/>
-                <owl:allValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>demand-oriented</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>periodic</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:unionOf>
-                    </rdfs:Datatype>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:notesAndExplanation>Overall equipment effectiveness (OEE) is an indicator for the efficiency of work units, work centres and areas with several work units or an entire work centre. The OEE Index forms the basis for improvements by better production information, identification of production losses, and improvement of the product quality by optimized processes.
-The OEE Index represents the used availability, the effectiveness of the work unit, and the quality rate integrated in only one indicator.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Net equipment effectiveness (NEE) index is comparable with the OEE index but it includes the setup time within the availability. The NEE index indicates losses by work unit delays, cycle time losses and losses by rework.</ISO22400-2:application>
+        <ISO22400-2:formula>NEE index = AUPT / PBT * Effectiveness * Quality rate</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>Compared to the OEE index, the NEE index is used more rarely. The NEE includes the preparation and set-up time as no losses.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -3144,8 +3483,8 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OperatingTimeBetweenFailures">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms"/>
-        <dc:acronym>TBF</dc:acronym>
-        <dc:notesAndExplanation>Total time duration of operating time between two consecutive failures of a repaired item (IEC 60050-191). It includes setup time and production time related to the order being processed, but no delay times.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>TBF</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>Total time duration of operating time between two consecutive failures of a repaired item (IEC 60050-191). It includes setup time and production time related to the order being processed, but no delay times.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3154,8 +3493,8 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OperationCluster">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrganizationalTerms"/>
-        <dc:acronym>OC</dc:acronym>
-        <dc:notesAndExplanation>An operation cluster can be a work unit, a workstation or a group of it, or a work center or a site. The operation clusters are hierarchically defined. An operation cluster is within a hierarchical level a configuration of one or more workcenters up to a site.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>OC</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>An operation cluster can be a work unit, a workstation or a group of it, or a work center or a site. The operation clusters are hierarchically defined. An operation cluster is within a hierarchical level a configuration of one or more workcenters up to a site.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3164,8 +3503,8 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrderQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>POQ</dc:acronym>
-        <dc:notesAndExplanation>The order quantity is the planned quantity of products for a production order (lot size, production order quantity).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>POQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The order quantity is the planned quantity of products for a production order (lot size, production order quantity).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3182,8 +3521,8 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OtherLoss">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>OL</dc:acronym>
-        <dc:notesAndExplanation>The quantity lost due to extraordinary incidents such as natural disasters.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>OL</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The quantity lost due to extraordinary incidents such as natural disasters.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3192,6 +3531,20 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OtherLossRatio">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Inventory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumedMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OtherLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -3306,7 +3659,153 @@ The OEE Index represents the used availability, the effectiveness of the work un
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Other Loss Ratio evaluates loss that is not during production, storage, or transportation.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Other Loss Ratio evaluates loss that is not during production, storage, or transportation.</ISO22400-2:application>
+        <ISO22400-2:formula>Other loss ratio = OL / CM</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This indicator is suitable as on-line characteristic number for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OverallEquipmentEffectiveness -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OverallEquipmentEffectiveness">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasComplexArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Availability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasComplexArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Effectiveness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasComplexArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityRatio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>batch</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>continuous</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>discrete</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UserGroup"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Chief</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Management</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Master</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Timing"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>demand-oriented</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>periodic</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ISO22400-2:application>Overall equipment effectiveness (OEE) is an indicator for the efficiency of work units, work centres and areas with several work units or an entire work centre. The OEE Index forms the basis for improvements by better production information, identification of production losses, and improvement of the product quality by optimized processes.
+The OEE Index represents the used availability, the effectiveness of the work unit, and the quality rate integrated in only one indicator.</ISO22400-2:application>
+        <ISO22400-2:formula>OEE index = Availability * Effectiveness * Quality rate</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>Before starting a benchmark based on the OEE index, it has to be checked the criteria for a comparability first.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -3315,8 +3814,8 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedBusyTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedPeriods"/>
-        <dc:acronym>PBT</dc:acronym>
-        <dc:notesAndExplanation>The planned busy time is the operating time minus the planned downtime. The planned down time may be used for planned maintenance work. The planned busy period is available for the detailed planning of the work unit for expected production orders.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PBT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The planned busy time is the operating time minus the planned downtime. The planned down time may be used for planned maintenance work. The planned busy period is available for the detailed planning of the work unit for expected production orders.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3325,8 +3824,8 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedOperationTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedPeriods"/>
-        <dc:acronym>POT</dc:acronym>
-        <dc:notesAndExplanation>The planned operation time is that time in which a work unit can be used. The operation time is a scheduled time.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>POT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The planned operation time is that time in which a work unit can be used. The operation time is a scheduled time.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3335,9 +3834,9 @@ The OEE Index represents the used availability, the effectiveness of the work un
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedOrderTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedPeriods"/>
-        <dc:acronym>POET</dc:acronym>
-        <dc:notesAndExplanation>The planned order time is the scheduled time for executing an order based on the work plan.
-NOTE: It is often calculated from the planned run time per unit multiplied by the order quantity plus the planned setup time.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>POET</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The planned order time is the scheduled time for executing an order based on the work plan.
+NOTE: It is often calculated from the planned run time per unit multiplied by the order quantity plus the planned setup time.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3354,8 +3853,8 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedRuntimePerUnit">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedPeriods"/>
-        <dc:acronym>PRU</dc:acronym>
-        <dc:notesAndExplanation>The run time per unit is the scheduled time for producing one unit.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PRU</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The run time per unit is the scheduled time for producing one unit.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3364,8 +3863,8 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedScrapQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>PSQ</dc:acronym>
-        <dc:notesAndExplanation>The planned scrap quantity is the amount of process-related scrap that is expected when manufacturing the product (e.g. at the start or ramp-up phases of the manufacturing systems).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PSQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The planned scrap quantity is the amount of process-related scrap that is expected when manufacturing the product (e.g. at the start or ramp-up phases of the manufacturing systems).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3374,8 +3873,8 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedSetupTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PlannedPeriods"/>
-        <dc:acronym>PSUT</dc:acronym>
-        <dc:notesAndExplanation>The planned setup time is the scheduled time for the setup of a work unit for an order.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PSUT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The planned setup time is the scheduled time for the setup of a work unit for an order.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3384,8 +3883,8 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#PreventiveMaintenanceTime">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms"/>
-        <dc:acronym>PMT</dc:acronym>
-        <dc:notesAndExplanation>That part of the maintenance time during which preventive maintenance is performed on an item, including technical delays and logistic delays inherent in preventive maintenance (IEC 60050-191).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PMT</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>That part of the maintenance time during which preventive maintenance is performed on an item, including technical delays and logistic delays inherent in preventive maintenance (IEC 60050-191).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3394,6 +3893,27 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProcessCapabilityIndex">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LowerSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UpperSpecificationLimit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Variance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -3499,7 +4019,15 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Process capability index should indicate based on statistic methods as soon as possible if the production process will produce the product according to the committed quality specifications. The Process capability index (Cp) is the relationship between the dispersion of a process and the specification limits. The method compares the range between the specification limits and the 6sigma process dispersion. A process is usually called capable if the process capability index is &gt; 1,33.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Process capability index should indicate based on statistic methods as soon as possible if the production process will produce the product according to the committed quality specifications. The Process capability index (Cp) is the relationship between the dispersion of a process and the specification limits. The method compares the range between the specification limits and the 6sigma process dispersion. A process is usually called capable if the process capability index is &gt; 1,33.</ISO22400-2:application>
+        <ISO22400-2:formula>Cp = (USL - LSL) / (6 * sˆ )</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The measurement has to be done in regular time steps or after
+defined quantity intervals with small samples (1-25).
+sˆ will be calculated based on a confidence factor from the
+standard deviation, depending on the sample inspection size.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>infinite, if sˆ à 0</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0, if sˆ is very big</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -3508,8 +4036,8 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>PQ</dc:acronym>
-        <dc:notesAndExplanation>The produced quantity is the quantity that a work unit has produced in relation to a production order.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The produced quantity is the quantity that a work unit has produced in relation to a production order.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3526,8 +4054,8 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProductionLoss">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>PL</dc:acronym>
-        <dc:notesAndExplanation>The quantity lost during production, calculate as output minus input.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PL</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The quantity lost during production, calculate as output minus input.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3536,6 +4064,20 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProductionLossRatio">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumedMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProductionLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -3650,13 +4192,18 @@ NOTE: It is often calculated from the planned run time per unit multiplied by th
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>Scrap and reworking are not measured in the process industries.
+        <ISO22400-2:application>Scrap and reworking are not measured in the process industries.
 Instead, the focus is on loss, where: Integrated Goods Ratio + Loss Ratio = 1 Loss Ratio = Production Loss Ratio + Storage and Transportation Loss Ratio + Other Loss Ratio
 For these calculations the following apply. Production loss: for quantity lost during production, calculate as output minus input.
 Storage and transportation loss: the quantity lost during storage and transportation, such as inventory lost during an inventory calculation or material lost during movement from one place to another.
 Other loss: the quantity lost due to extraordinary incidents such
 as natural disasters.
-The Production Loss Ratio is the relationship of quantity lost during production to the consumed material.</dc:notesAndExplanation>
+The Production Loss Ratio is the relationship of quantity lost during production to the consumed material.</ISO22400-2:application>
+        <ISO22400-2:formula>Production loss ration = PL / CM</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This indicator is suitable as on-line characteristic number for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -3665,8 +4212,8 @@ The Production Loss Ratio is the relationship of quantity lost during production
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProductionOrder">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrganizationalTerms"/>
-        <dc:acronym>PO</dc:acronym>
-        <dc:notesAndExplanation>The production order includes the necessary production order sequences and the order quantity for the manufacturing of a product.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>PO</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The production order includes the necessary production order sequences and the order quantity for the manufacturing of a product.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3675,10 +4222,10 @@ The Production Loss Ratio is the relationship of quantity lost during production
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProductionOrderSequence">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrganizationalTerms"/>
-        <dc:acronym>POS</dc:acronym>
-        <dc:notesAndExplanation>The order sequence (production order position) defines the successive manufacturing steps within a production order.
+        <ISO22400-2:acronym>POS</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The order sequence (production order position) defines the successive manufacturing steps within a production order.
 NOTE
-These are usually numbered subsequently (usually in steps of ten).</dc:notesAndExplanation>
+These are usually numbered subsequently (usually in steps of ten).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3687,6 +4234,20 @@ These are usually numbered subsequently (usually in steps of ten).</dc:notesAndE
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProductionProcessRate">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualOrderExecutionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualProductionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -3792,8 +4353,13 @@ These are usually numbered subsequently (usually in steps of ten).</dc:notesAndE
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The production process ratio is an index for the efficiency of the production. This indicator defines the relationship between the production time and the whole throughput time of a production order.
-When the production process ratio is low, then it means that the production orders include a lot of wait-time or idle periods instead of production time.</dc:notesAndExplanation>
+        <ISO22400-2:application>The production process ratio is an index for the efficiency of the production. This indicator defines the relationship between the production time and the whole throughput time of a production order.
+When the production process ratio is low, then it means that the production orders include a lot of wait-time or idle periods instead of production time.</ISO22400-2:application>
+        <ISO22400-2:formula>Production process ratio = APT / AOET</ISO22400-2:formula>
+        <ISO22400-2:ratingMax>&gt; 100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>By overlapping production order operations it is possible to get a result higher than 100%. Because the throughput time is related to production orders, the smallest entity will be a complete production order. The production time is the summary about all production time periods of all production order operations which are included in the selected production orders</ISO22400-2:ratingTrend>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -3812,6 +4378,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#GoodQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -3924,7 +4504,12 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Quality ratio is the relationship between the good quantity and the produced quantity.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Quality ratio is the relationship between the good quantity and the produced quantity.</ISO22400-2:application>
+        <ISO22400-2:formula>Quality ratio = GQ / PQ</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -3941,8 +4526,8 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#RatedEquipmentProductionCapacity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>REPC</dc:acronym>
-        <dc:notesAndExplanation>The upper limit value of production promised the stable operation of the equipment.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>REPC</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The upper limit value of production promised the stable operation of the equipment.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3951,8 +4536,8 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#RawMaterialsInventory">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>RMI</dc:acronym>
-        <dc:notesAndExplanation>The materials that are changed into finished goods though the production.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>RMI</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The materials that are changed into finished goods though the production.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3961,8 +4546,8 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ReworkQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>RQ</dc:acronym>
-        <dc:notesAndExplanation>The rework quantity is the produced quantity that missed the quality requirements. However, these requirements can be met by subsequent work.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>RQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The rework quantity is the produced quantity that missed the quality requirements. However, these requirements can be met by subsequent work.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -3973,6 +4558,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ReworkQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -4085,7 +4684,13 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The rework ratio is the relationship between rework quantity and produced quantity.</dc:notesAndExplanation>
+        <ISO22400-2:application>The rework ratio is the relationship between rework quantity and produced quantity.</ISO22400-2:application>
+        <ISO22400-2:formula>Rework ratio = RQ / PQ</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The Rework ratio will be also used for the commercial rating. As smaller the value, as better is the productivity.
+This indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4094,8 +4699,8 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ScrapQuantity">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>SQ</dc:acronym>
-        <dc:notesAndExplanation>The scrap quantity is the produced quantity that did not meet quality requirements and either has to be scrapped or recycled.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>SQ</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The scrap quantity is the produced quantity that did not meet quality requirements and either has to be scrapped or recycled.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4106,6 +4711,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ScrapQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -4218,7 +4837,13 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The scrap ratio is the relationship between scrap quantity and produced quantity.</dc:notesAndExplanation>
+        <ISO22400-2:application>The scrap ratio is the relationship between scrap quantity and produced quantity.</ISO22400-2:application>
+        <ISO22400-2:formula>Scrap ratio = SQ / PQ</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The Scrap ratio will be also used for the commercial rating. As smaller the value, as better is the productivity.
+This indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingMin>100%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4229,6 +4854,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualSetupTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitProcessingTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -4332,7 +4971,12 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The setup rate is an index for the preparation time in relationship to the processing time at a work unit. As higher the value as higher is the set up part in relation to the processing time of a production order. For an enterprise a high setup rate means a consumption of value added time.</dc:notesAndExplanation>
+        <ISO22400-2:application>The setup rate is an index for the preparation time in relationship to the processing time at a work unit. As higher the value as higher is the set up part in relation to the processing time of a production order. For an enterprise a high setup rate means a consumption of value added time.</ISO22400-2:application>
+        <ISO22400-2:formula>Setup rate = ASUT / AUPT</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The setup rate has to be considered especially when the order lots will be split in smaller lots.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4341,8 +4985,8 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#StandardDeviation">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>S</dc:acronym>
-        <dc:notesAndExplanation>The standard deviation is a measure for the dispersion of measured values around its average value and is determined from the square root of the variance.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>S</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The standard deviation is a measure for the dispersion of measured values around its average value and is determined from the square root of the variance.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4351,8 +4995,8 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#StorageAndTransportationLoss">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>STL</dc:acronym>
-        <dc:notesAndExplanation>The quantity lost during storage and transportation, such as inventory lost during an inventory calculation or material lost during movement from one place to another.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>STL</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The quantity lost during storage and transportation, such as inventory lost during an inventory calculation or material lost during movement from one place to another.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4363,6 +5007,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Inventory"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ConsumedMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#StorageAndTransportationLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -4475,7 +5133,12 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Storage and Transportation Loss Ratio is the relationship of the quantity of loss during storage and transportation to the consumed material.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Storage and Transportation Loss Ratio is the relationship of the quantity of loss during storage and transportation to the consumed material.</ISO22400-2:application>
+        <ISO22400-2:formula>Storage and transportation loss ratio = STL / CM</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This indicator is suitable as on-line characteristic number for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the lower, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4486,6 +5149,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualProductionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitDelayTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -4598,7 +5275,12 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The technical efficiency of a work unit is the relationship between the production time period and production time period including the delays or malfunction-caused interruptions.</dc:notesAndExplanation>
+        <ISO22400-2:application>The technical efficiency of a work unit is the relationship between the production time period and production time period including the delays or malfunction-caused interruptions.</ISO22400-2:application>
+        <ISO22400-2:formula>Technical efficiency = APT / (APT + ADET)</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>100% corresponds to maximum attainable technical efficiency without malfunction-caused interruptions. The technical efficiency indicates how much capacity is still available by reduction of the delays and malfunction interrupts. Compared with the utilisation degree, the setup time will not be considered. This indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher, the better.</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4609,6 +5291,20 @@ When the production process ratio is low, then it means that the production orde
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualOrderExecutionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ProducedQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
@@ -4712,7 +5408,12 @@ When the production process ratio is low, then it means that the production orde
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Throughput rate is an index for the performance of a process. It indicates the produced quantity per unit time. This performance indicator is an important index for the efficiency in production.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Throughput rate is an index for the performance of a process. It indicates the produced quantity per unit time. This performance indicator is an important index for the efficiency in production.</ISO22400-2:application>
+        <ISO22400-2:formula>Throughput rate = PQ / AOET</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>The Throughput rate is an index for the performance of a process. It indicates the produced quantity per unit time. This performance indicator is an important index for the efficiency in production.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>depending on product</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4721,9 +5422,9 @@ When the production process ratio is low, then it means that the production orde
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#TimeElements">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Elements"/>
-        <dc:notesAndExplanation>Many time models for performance indicator data are complete and conclusive for manually performed production, but cannot always be used for automated production processes. To avoid potential misunderstanding, the time elements used in KPI descriptions are explicitly defined below.
+        <ISO22400-2:notesAndExplanation>Many time models for performance indicator data are complete and conclusive for manually performed production, but cannot always be used for automated production processes. To avoid potential misunderstanding, the time elements used in KPI descriptions are explicitly defined below.
 In this model, a production order is processed and completed when one or more tasks are performed by a set of production resources, such as, production personnel, equipment and materials.
-The identifying name for a time element is extended with a simple abbreviation in round brackets, which is used below in KPI calculations.</dc:notesAndExplanation>
+The identifying name for a time element is extended with a simple abbreviation in round brackets, which is used below in KPI calculations.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4732,8 +5433,8 @@ The identifying name for a time element is extended with a simple abbreviation i
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#TimeToFailure">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms"/>
-        <dc:acronym>TTF</dc:acronym>
-        <dc:notesAndExplanation>Total time duration of operating time of an item, from the instant it is first put in an up state, until failure or, from the instant of restoration until next failure (IEC 60050-191)</dc:notesAndExplanation>
+        <ISO22400-2:acronym>TTF</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>Total time duration of operating time of an item, from the instant it is first put in an up state, until failure or, from the instant of restoration until next failure (IEC 60050-191)</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4742,8 +5443,8 @@ The identifying name for a time element is extended with a simple abbreviation i
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#TimeToRestoration">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#MaintenanceTerms"/>
-        <dc:acronym>TTR</dc:acronym>
-        <dc:notesAndExplanation>Time interval during which an item is in a down state due to a failure (IEC 60050-191).</dc:notesAndExplanation>
+        <ISO22400-2:acronym>TTR</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>Time interval during which an item is in a down state due to a failure (IEC 60050-191).</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4752,8 +5453,8 @@ The identifying name for a time element is extended with a simple abbreviation i
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UpperSpecificationLimit">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>USL</dc:acronym>
-        <dc:notesAndExplanation>The upper specification limit corresponds to the upper specification border related to the characteristic of a product.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>USL</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The upper specification limit corresponds to the upper specification border related to the characteristic of a product.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4762,6 +5463,20 @@ The identifying name for a time element is extended with a simple abbreviation i
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#UtilizationEfficiency">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualProductionTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#hasSimpleArgument"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ActualUnitBusyTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#ManufacturingType"/>
@@ -4876,7 +5591,12 @@ The identifying name for a time element is extended with a simple abbreviation i
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:notesAndExplanation>The Utilization efficiency is the rate between the production time and the busy time. This indicator identifies the productivity of work units. Because only the production time effects an added value which will be paid by the market, the goal should be to get a high indicator value.</dc:notesAndExplanation>
+        <ISO22400-2:application>The Utilization efficiency is the rate between the production time and the busy time. This indicator identifies the productivity of work units. Because only the production time effects an added value which will be paid by the market, the goal should be to get a high indicator value.</ISO22400-2:application>
+        <ISO22400-2:formula>Utilization efficiency = APT / AUBT</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>This performance indicator is usable as online indicator for the worker level.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>the higher the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -4885,8 +5605,8 @@ The identifying name for a time element is extended with a simple abbreviation i
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Variance">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#QualityTerms"/>
-        <dc:acronym>SIGMA_SQUARE</dc:acronym>
-        <dc:notesAndExplanation>The variance σ2 is a measure, which describes, how strongly a measured variable (characteristic) strews. It is calculated as the distances of the measured values from the average value are squared, summed up and divided by the number of measured values.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>SIGMA_SQUARE</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The variance σ2 is a measure, which describes, how strongly a measured variable (characteristic) strews. It is calculated as the distances of the measured values from the average value are squared, summed up and divided by the number of measured values.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4895,9 +5615,9 @@ The identifying name for a time element is extended with a simple abbreviation i
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#WorkCenter">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OperationCluster"/>
-        <dc:acronym>WC</dc:acronym>
-        <dc:notesAndExplanation>Work centers are elements of the equipment hierarchy under an area.
-For manufacturing operations management there are specific terms for work centers and work units that apply to batch production, continuous production, discrete or repetitive production, and for storage and movement of materials and equipment.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>WC</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>Work centers are elements of the equipment hierarchy under an area.
+For manufacturing operations management there are specific terms for work centers and work units that apply to batch production, continuous production, discrete or repetitive production, and for storage and movement of materials and equipment.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4906,8 +5626,8 @@ For manufacturing operations management there are specific terms for work center
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#WorkInProgressInventory">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#LogisticalTerms"/>
-        <dc:acronym>WIP</dc:acronym>
-        <dc:notesAndExplanation>The inventory between the start and end points of a product routing is called Work in process (WIP). Since routing begin and end at stock points, WIP is the entire product between, but not including, the ending stock points. Although in colloquial use WIP often includes crib inventories, a distinction is made between crib inventory and WIP for clarification.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>WIP</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The inventory between the start and end points of a product routing is called Work in process (WIP). Since routing begin and end at stock points, WIP is the entire product between, but not including, the ending stock points. Although in colloquial use WIP often includes crib inventories, a distinction is made between crib inventory and WIP for clarification.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4916,8 +5636,8 @@ For manufacturing operations management there are specific terms for work center
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#WorkProcess">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrganizationalTerms"/>
-        <dc:acronym>WOP</dc:acronym>
-        <dc:notesAndExplanation>The work process defines a method of manufacturing (e.g. drilling, turning, hardening, etc.). Each production order sequence is assigned to a work process.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>WOP</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The work process defines a method of manufacturing (e.g. drilling, turning, hardening, etc.). Each production order sequence is assigned to a work process.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -4926,9 +5646,9 @@ For manufacturing operations management there are specific terms for work center
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#WorkUnit">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OperationCluster"/>
-        <dc:acronym>WU</dc:acronym>
-        <dc:notesAndExplanation>A work unit is any element of the equipment hierarchy under a work center.
-For manufacturing operations management there are specific terms for work centers and work units that apply to batch production, continuous production, discrete or repetitive production, and for storage and movement of materials and equipment.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>WU</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>A work unit is any element of the equipment hierarchy under a work center.
+For manufacturing operations management there are specific terms for work centers and work units that apply to batch production, continuous production, discrete or repetitive production, and for storage and movement of materials and equipment.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -5059,11 +5779,12 @@ For manufacturing operations management there are specific terms for work center
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:application>The Worker efficiency considers the relationship between the working hours related to production orders and the total attendance time of the employees.</dc:application>
-        <dc:notesAndExplanation>It has to be noted that the work time has to be split if the operation works with several work units at the same time.</dc:notesAndExplanation>
-        <dc:ratingMax>100%</dc:ratingMax>
-        <dc:ratingMin>0%</dc:ratingMin>
-        <dc:ratingTrend>Trend: the higher the better</dc:ratingTrend>
+        <ISO22400-2:application>The Worker efficiency considers the relationship between the working hours related to production orders and the total attendance time of the employees.</ISO22400-2:application>
+        <ISO22400-2:formula>Worker efficiency = APWT / APAT</ISO22400-2:formula>
+        <ISO22400-2:notesAndExplanation>It has to be noted that the work time has to be split if the operation works with several work units at the same time.</ISO22400-2:notesAndExplanation>
+        <ISO22400-2:ratingMax>100%</ISO22400-2:ratingMax>
+        <ISO22400-2:ratingMin>0%</ISO22400-2:ratingMin>
+        <ISO22400-2:ratingTrend>Trend: the higher the better</ISO22400-2:ratingTrend>
     </owl:Class>
     
 
@@ -5072,8 +5793,8 @@ For manufacturing operations management there are specific terms for work center
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#WorkingGroup">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrganizationalTerms"/>
-        <dc:acronym>WG</dc:acronym>
-        <dc:notesAndExplanation>The working group serves to organize responsibility and authority in the production area. Every employee in production can be assigned to a working group.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>WG</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The working group serves to organize responsibility and authority in the production area. Every employee in production can be assigned to a working group.</ISO22400-2:notesAndExplanation>
     </owl:Class>
     
 
@@ -5082,8 +5803,8 @@ For manufacturing operations management there are specific terms for work center
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Workplace">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#OrganizationalTerms"/>
-        <dc:acronym>WP</dc:acronym>
-        <dc:notesAndExplanation>The workplace is a logical unit of production, which may be manual, semi-automatic or fully automatic.</dc:notesAndExplanation>
+        <ISO22400-2:acronym>WP</ISO22400-2:acronym>
+        <ISO22400-2:notesAndExplanation>The workplace is a logical unit of production, which may be manual, semi-automatic or fully automatic.</ISO22400-2:notesAndExplanation>
     </owl:Class>
 </rdf:RDF>
 
