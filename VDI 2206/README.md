@@ -17,5 +17,5 @@ Table 1: Example Competency Questions
 ![](./pictures/VDI2206_exCQ.png?raw=true "exampleCQ")
 
 
-[1] Guideline VDI 2206. Design methodology for mechatronic systems, 06.2004.
+[1] Guideline VDI 2206. Design methodology for mechatronic systems, 06.2004.<br></br>
 [2] R. Woll, “Informationsruckfhrung zur Optimierung der Produktentwicklung,” Dissertation, Berlin, 2001.
