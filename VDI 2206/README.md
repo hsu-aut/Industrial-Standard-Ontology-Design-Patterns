@@ -9,7 +9,7 @@ As the VDI 2206 does not define any inheritance concepts, but it provides concep
 concept introduced in [2] can be applied to overcome this modelling issue. Here, any member of any class of the VDI 2206 can be also 
 member of one of the classes shown in Figure [2], in order to enable inheritance.
 
-![](./pictures/VDI2206_LWO.png?raw=true "Parent Child LWO")<br></br>
+![](./pictures/parentChild_LWO.png?raw=true "Parent Child LWO")<br></br>
 Figure 2: Parent-child concept with respect to [2]
 
 Exemplary Competency Questions that could be answered with this ODP:<br></br>
