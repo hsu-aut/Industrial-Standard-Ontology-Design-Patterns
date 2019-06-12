@@ -44,6 +44,17 @@
     
 
 
+    <!-- http://www.hsu-ifa.de/ontologies/DINEN61360#Data_Element_describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/DINEN61360#Data_Element_describes">
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/DINEN61360#has_Data_Element"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/DINEN61360#Data_Element"/>
+        <rdfs:comment>Description:
+This ObjectProperty is used to connect a data element with any kind of entity that is described by the data element</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hsu-ifa.de/ontologies/DINEN61360#Instance_Description_has_Type -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/DINEN61360#Instance_Description_has_Type">
