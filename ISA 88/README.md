@@ -1,4 +1,4 @@
-The ANSl/ISA-TR88.00.02-2015 technical report is intended to build upon and formalize the concepts of the PackML guidelines 
+The ANSl/ISA-TR88.00.02-2015 [1] technical report is intended to build upon and formalize the concepts of the PackML guidelines 
 and to show application examples. PackML is used to provide a standard description of states for comparison of machine statuses 
 among different types of machines. The concepts used in this standard describe general states and transitions of a 
 packaging machine, but could be used to describe the states and transitions of any machine. This is due to the reason, 
@@ -27,3 +27,6 @@ Figure 2: PackML main state machine
 Exemplary Competency Questions that could be answered with this ODP:<br></br>
 Table 1: Example Competency Questions
 ![](./pictures/ISA88_exCQ.png?raw=true "exampleCQ")
+
+[1] ANSl/ISA-TR88.00.02-2015] ANSl/ISA-TR88.00.02-2015. Machine and Unit States: 
+An implementation example of ANSl/ISA-88.00.01, 02.2015.
