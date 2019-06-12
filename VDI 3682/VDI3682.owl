@@ -209,7 +209,9 @@ Furthermore, the Operator can be used to express dependencies between In- and Ou
     <!-- http://www.hsu-ifa.de/ontologies/VDI3682#hasSubProcess -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#hasSubProcess">
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#hasUpperProcess"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#Process"/>
         <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#Process"/>
         <rdfs:comment>ObjectProperty that is used for decomposition of process operators.</rdfs:comment>
@@ -226,6 +228,17 @@ Furthermore, the Operator can be used to express dependencies between In- and Ou
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#downFlow"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>an object property that is used to infer a successing relationshipt between entities</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI3682#hasUpperProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#hasUpperProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#Process"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#Process"/>
     </owl:ObjectProperty>
     
 
