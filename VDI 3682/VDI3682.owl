@@ -336,6 +336,36 @@ Furthermore, the Operator can be used to express dependencies between In- and Ou
     <!-- http://www.hsu-ifa.de/ontologies/VDI3682#Process -->
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Process">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#hasInput"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Energy"/>
+                            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Information"/>
+                            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Product"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#hasOutput"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Energy"/>
+                            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Information"/>
+                            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Product"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A process describes the desired behavior of a process operator, by means of a solution neutral description of inputs and outputs. Products,energies  and information are converted into new products,energies  and information by a process operator. The process operator implements this conversion with the help of technical resources.
 
 [VDI3682]</rdfs:comment>
