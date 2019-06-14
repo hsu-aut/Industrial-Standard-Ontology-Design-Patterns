@@ -71,6 +71,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -307,6 +324,32 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This DataProperty is not included in ISO 22400-2, but is necessary for the specification of a calculated or measured value. The DataProperty may contain the value or an address to where the value can be found.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#forPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#forPeriod">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Elements"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#KeyPerformanceIndicator"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment>This data property is not contained in the ISO 22400-2 but necessary for the definition of the corresponding time period that a time span is declared for. E.g. &quot;2002-05-30&quot; would define the period of the complete day of 2019-05-30 relevant for the time span.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#timeSpan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#timeSpan">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#TimeElements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     </owl:DatatypeProperty>
     
 
@@ -2720,7 +2763,15 @@ It is essential to make sure that throughput and inventory are measured in the s
 
     <!-- http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#KeyPerformanceIndicator -->
 
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#KeyPerformanceIndicator"/>
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#KeyPerformanceIndicator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISO22400-2.owl#Value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
