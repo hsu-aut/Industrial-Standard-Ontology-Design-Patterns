@@ -4,9 +4,18 @@ The development of software functionalities, or applications in general, that mo
 
 The ontologies within this repository are based on industrial standards (e.g. ISO, DIN EN, VDI/VDE etc.), hence, the ontologies use the vocabulary and technical concept of these standards, i.e. the ontologies formalize the knowledge contained in these standards.
 
+## Get access
 In order to open the Ontologies in Protégé or TopBraid Composer, you can either clone this repository (or download as zip) or directly import them. In order to do the latter, you have to navigate to a .owl file of a Ontology-Design-Pattern in this repository and let it display as raw file. Copy the URL to the "Open from URL" option of your Ontology Design Tool.
 
-Further reading:
+## Use it
+The Lightweight Industrial Ontology Design Support Tool (LiOnS), is designed to create RDF models using the Ontology Design Patterns of this repository. This enables users to:
+- Semi-automatically design RDF models (only variable parts of the graph have to be defined)
+- Consistent modelling, without being an ontology expert
+- Downloading Turtle serialized models or SPARQL INSERTs
+
+For more information, see `https://github.com/ConstantinHildebrandt/lion`.
+
+## Further reading:
 - C. Hildebrandt, A. Scholz, A. Fay, T. Schröder, T. Hadlich, C. Diedrich, M. Dubovy, C. Eck, R. Wiegand: Semantic Modeling for Collaboration and Cooperation of Systems in the production domain. In: 22nd IEEE Emerging Technology and Factory Automation (ETFA), 2017.
 -  C. Hildebrandt, S. Törsleff, T. Bandyszak, B. Caesar, A. Ludewig, A. Fay: Ontology Engineering for Collaborative Embedded Systems – Requirements and Initial Approach. In: Schäfer, Karagiannis (Hrsg.): Fachtagung Modellierung, 2018.
 - C. Hildebrandt, S. Törsleff, B. Caesar, A. Fay: Ontology Building for Cyber-Physical Systems: A domain expert centric approach. In: 2018 14th IEEE Conference on Automation Science and Engineering (CASE 2018), 2018.
