@@ -314,7 +314,6 @@ Furthermore, the Operator can be used to express dependencies between In- and Ou
     <!-- http://www.hsu-ifa.de/ontologies/VDI3682#isOnSystemBorder -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#isOnSystemBorder">
-        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI3682#isWithinSystemBorder"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
