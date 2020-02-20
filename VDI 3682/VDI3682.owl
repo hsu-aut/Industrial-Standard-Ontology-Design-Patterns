@@ -535,7 +535,6 @@ Furthermore, the Operator can be used to express dependencies between In- and Ou
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Energy"/>
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Information"/>
-            <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Process"/>
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#Product"/>
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#State"/>
             <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/VDI3682#SystemBorder"/>
