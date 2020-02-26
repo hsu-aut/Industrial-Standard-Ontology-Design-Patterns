@@ -1,0 +1,28 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ISO: <http://www.hsu-ifa.de/ontologies/ISO22400-2#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    
+    INSERT {
+        
+    GRAPH <http://yourGraphHere>{
+    
+    ?entity ISO:hasElement ?newElement;
+            rdf:type ?IsoUnit;
+            a owl:NamedIndividual.
+    ?newElement rdf:type ?elementClass;
+            a owl:NamedIndividual.
+    ?newElement ISO:forPeriod "${relevantPeriod}"^^xsd:dateTimeStamp.       
+    
+    #        optional, depending on whether it is a time element or not
+    ?newElement ISO:timeSpan "${duration}"^^xsd:duration.     
+    ?newElement ISO:Value "${value}"^^xsd:string;
+                ISO:UnitOfMeasure "${UnitOfMeasure}"^^xsd:string.
+
+        }
+    } WHERE {
+        BIND(IRI(STR("${entityIRI}")) AS ?entity).      
+        BIND(IRI(STR("${entityClass}")) AS ?IsoUnit).   
+        BIND(IRI(STR("${elementIRI}")) AS ?newElement).
+        BIND(IRI(STR("${elementClass}")) AS ?elementClass).
+    }

@@ -1,0 +1,28 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ISO: <http://www.hsu-ifa.de/ontologies/ISO22400-2#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    
+    INSERT {
+        
+    GRAPH <http://yourGraphHere>{
+    
+    ?entity ISO:hasKeyPerformanceIndicator ?newKPI;
+            rdf:type ?IsoUnit;
+            a owl:NamedIndividual.
+    ?newKPI rdf:type ?KPI_Class;
+            a owl:NamedIndividual;
+            ISO:Timing "${KPI_Timing}"^^xsd:string.
+    ?newKPI ISO:forPeriod "${relevantPeriod}"^^xsd:dateTimeStamp.        
+    
+    #        optional, depending on whether it is a time element or not
+    ?newKPI  ISO:Value "${value}"^^xsd:string;
+             ISO:UnitOfMeasure "${UnitOfMeasure}"^^xsd:string.     
+
+        }
+    } WHERE {
+        BIND(IRI(STR("${entityIRI}")) AS ?entity).      
+        BIND(IRI(STR("${entityClass}")) AS ?IsoUnit).   
+        BIND(IRI(STR("${KPI_IRI}")) AS ?newKPI).
+        BIND(IRI(STR("${KPI_Class}")) AS ?KPI_Class).
+    }
