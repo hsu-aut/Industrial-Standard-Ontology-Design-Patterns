@@ -963,6 +963,22 @@
     
 
 
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#hasNodeOpcUaName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#hasNodeOpcUaName">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.hsu-ifa.de/ontologies/OpcUa#historizing -->
 
     <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#historizing">
@@ -1146,13 +1162,41 @@
 
     <!-- http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode -->
 
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode"/>
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_None"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_Sign"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_SignAndEncrypt"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
     <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy -->
 
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Aes128"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Aes128_Sha256_RsaOaep"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic128"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic128Rsa15"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic192"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic192Rsa15"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256Rsa15"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256Sha256"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_None"/>
+                    <rdf:Description rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_PubSub_Aes128_CTR"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -6127,6 +6171,33 @@
     
 
 
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_None -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_None">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode"/>
+        <hasNodeOpcUaName>None</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_Sign -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_Sign">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode"/>
+        <hasNodeOpcUaName>Sign</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_SignAndEncrypt -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode_SignAndEncrypt">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#MessageSecurityMode"/>
+        <hasNodeOpcUaName>SignAndEncrypt</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.hsu-ifa.de/ontologies/OpcUa#ModelChangeStructureDataType -->
 
     <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#ModelChangeStructureDataType">
@@ -7800,6 +7871,114 @@
         <isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isAbstract>
         <nodeId>i=15471</nodeId>
         <nodeNamespace>http://opcfoundation.org/UA/</nodeNamespace>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Aes128 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Aes128">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Aes128</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Aes128_Sha256_RsaOaep -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Aes128_Sha256_RsaOaep">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Aes128_Sha256_RsaOaep</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic128 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic128">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic128</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic128Rsa15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic128Rsa15">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic128Rsa15</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic192 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic192">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic192</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic192Rsa15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic192Rsa15">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic192Rsa15</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic256</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256Rsa15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256Rsa15">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic256Rsa15</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256Sha256 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_Basic256Sha256">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>Basic256Sha256</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_None -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_None">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>None</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_PubSub_Aes128_CTR -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_PubSub_Aes128_CTR">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>PubSub_Aes128_CTR</hasNodeOpcUaName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_PubSub_Aes256_CTR -->
+
+    <owl:NamedIndividual rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy_PubSub_Aes256_CTR">
+        <rdf:type rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
+        <hasNodeOpcUaName>PubSub_Aes256_CTR</hasNodeOpcUaName>
     </owl:NamedIndividual>
     
 
