@@ -444,6 +444,15 @@
     
 
 
+    <!-- http://www.hsu-ifa.de/ontologies/OpcUa#hasNodeSet -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#hasNodeSet">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#UAServer"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#UANodeSet"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hsu-ifa.de/ontologies/OpcUa#hasNotifier -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#hasNotifier">
