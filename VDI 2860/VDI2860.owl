@@ -119,9 +119,7 @@
 
     <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben -->
 
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben">
-        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MaterialflussBewirken"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
     
 
 
@@ -146,12 +144,6 @@
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Loesen">
         <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Sichern"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#MaterialflussBewirken -->
-
-    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#MaterialflussBewirken"/>
     
 
 
