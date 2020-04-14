@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hsu-ifa.de/ontologies/VDI2860#"
+     xml:base="http://www.hsu-ifa.de/ontologies/VDI2860"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Abteilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Abteilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#AnwesenheitPruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#AnwesenheitPruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Drehen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Drehen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Entspannen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Entspannen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Loesen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#FarbePruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#FarbePruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Foerdern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Foerdern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#FormPruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#FormPruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Fuehren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Fuehren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#GewichtPruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#GewichtPruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#GroessePruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#GroessePruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Halten -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Halten">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Sichern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#IdentitaetPruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#IdentitaetPruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Loesen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Loesen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Sichern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Messen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Messen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Ordnen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Ordnen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Orientieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Orientieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#OrientierungMessen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#OrientierungMessen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#OrientierungPruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#OrientierungPruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#PositionMessen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#PositionMessen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#PositionPruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#PositionPruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Positionieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Positionieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Pruefen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Pruefen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Schwenken -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Schwenken">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Sichern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Sichern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Sortieren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Sortieren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Spannen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Spannen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Halten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Speichern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Speichern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Handhaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Teilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Teilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Vereinigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Vereinigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Verschieben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Verschieben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Verzweigen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Verzweigen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Weitergeben -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Weitergeben">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Bewegen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Zaehlen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Zaehlen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Kontrollieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Zusammenfuehren -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Zusammenfuehren">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#Zuteilen -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#Zuteilen">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#MengenVeraendern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#geordnetesSpeichern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#geordnetesSpeichern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Speichern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#teilgeordnetesSpeichern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#teilgeordnetesSpeichern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Speichern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/VDI2860#ungeordnetesSpeichern -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/VDI2860#ungeordnetesSpeichern">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/VDI2860#Speichern"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
