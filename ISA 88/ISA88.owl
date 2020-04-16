@@ -7,8 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/ISA-TR88">
-        <owl:versionIRI rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88/1.1.0"/>
-        <owl:versionInfo>1.1.0</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88/1.2.0"/>
+        <owl:versionInfo>1.2.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,6 +27,7 @@
     <!-- http://www.hsu-ifa.de/ontologies/ISA-TR88#State_is_connected_with_Transition -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISA-TR88#State_is_connected_with_Transition">
+        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#isConnectedWith"/>
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#State"/>
         <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#Transition"/>
         <rdfs:comment>Description:
@@ -38,6 +39,7 @@ ObjectProperty is used to connect a state with a transition.</rdfs:comment>
     <!-- http://www.hsu-ifa.de/ontologies/ISA-TR88#Transition_is_connected_with_State -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISA-TR88#Transition_is_connected_with_State">
+        <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#isConnectedWith"/>
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#Transition"/>
         <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#State"/>
         <rdfs:comment>Description:
@@ -77,6 +79,12 @@ ObjectProperty is used to connect a transition with a state</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#StateMachine"/>
         <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#Transition"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/ISA-TR88#isConnectedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/ISA-TR88#isConnectedWith"/>
     
 
 
