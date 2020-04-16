@@ -4,11 +4,26 @@ The development of software functionalities, or applications in general, that mo
 
 The ontologies within this repository are based on industrial standards (e.g. ISO, DIN EN, VDI/VDE etc.), hence, the ontologies use the vocabulary and technical concept of these standards, i.e. the ontologies formalize the knowledge contained in these standards.
 
-## Get access
-In order to open the Ontologies in Protégé or TopBraid Composer, you can either clone this repository (or download as zip) or directly import them. In order to do the latter, you have to navigate to a .owl file of a Ontology-Design-Pattern in this repository and let it display as raw file. Copy the URL to the "Open from URL" option of your Ontology Design Tool.
+## Usage
+If you want to use any of these ontology design patterns, the easiest way is to directly import them into your ontology via `owl:imports` statements. Make sure to reference a fixed release version so that you can't get surprised by future changes. To do so, click on the branch selection right below the number of commits and select a tag from the dropdown, e.g. v1.2.0. Then navigate to the .owl-file of the ODP you want to use, lets say VDI3682.owl. Open the raw file of this file. For this example it would be https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/VDI%203682/VDI3682.owl. You can use this URL in an `owl:imports` statement of your ontology. If you're having trouble using this URL in a tool like Protégé, try opening your ontology with a text editor and simply inserting your imports manually.
+An example of an imports section with a couple of ODPs looks like this:
 
-## Use it
-The Lightweight Industrial Ontology Design Support Tool (LiOnS), is designed to create RDF models using the Ontology Design Patterns of this repository. This enables users to:
+```xml
+<owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/capability-model#">
+    <owl:versionIRI rdf:resource="http://www.hsu-ifa.de/ontologies/capability-model/1.0.0#"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/DIN%208580/DIN8580.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/DIN%20EN%2061360/DINEN61360.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/OPC%20UA/OpcUa.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/VDI%202206/VDI2206.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/VDI%202860/VDI2860.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/VDI%203682/VDI3682.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/hsu-aut/Industrial-Standard-Ontology-Design-Patterns/v1.2.0/WADL/WADL.owl"/>
+</owl:Ontology>
+```
+Of course you can also clone or download this repository and import an ODP from a local copy. The advantage of the first approach is that tools like Protégé or TopBraid Composer will directly use the ontologies from the internet and you can simply increase the version number in case you want to use a newer version of our ODPs.
+
+## Tool Support
+In case you want to make creating individuals from these TBoxes a lot easier, check out our 'Lightweight Industrial Ontology Design Support Tool' (LiOnS). It is designed to create RDF models using the Ontology Design Patterns of this repository. This enables users to:
 - Semi-automatically design RDF models (only variable parts of the graph have to be defined)
 - Consistent modelling, without being an ontology expert
 - Downloading Turtle serialized models or SPARQL INSERTs
