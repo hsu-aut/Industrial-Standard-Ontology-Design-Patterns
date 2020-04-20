@@ -28,7 +28,7 @@ In case you want to make creating individuals from these TBoxes a lot easier, ch
 - Consistent modelling, without being an ontology expert
 - Downloading Turtle serialized models or SPARQL INSERTs
 
-For more information, see `https://github.com/ConstantinHildebrandt/lion`.
+For more information, see https://github.com/ConstantinHildebrandt/lion.
 
 ## Further reading:
 - C. Hildebrandt, A. Scholz, A. Fay, T. Schröder, T. Hadlich, C. Diedrich, M. Dubovy, C. Eck, R. Wiegand: Semantic Modeling for Collaboration and Cooperation of Systems in the production domain. In: 22nd IEEE Emerging Technology and Factory Automation (ETFA), 2017.
