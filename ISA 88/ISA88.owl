@@ -239,7 +239,7 @@ ANSl/ISA-TR88.00.02-2015</rdfs:comment>
     <!-- http://www.hsu-ifa.de/ontologies/ISA-TR88#Complete -->
 
     <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/ISA-TR88#Complete">
-        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#Acting"/>
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#Wait"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hsu-ifa.de/ontologies/ISA-TR88#State_is_connected_with_Transition"/>
