@@ -520,6 +520,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#hasSecurityPolicy">
         <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#UAServer"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#SecurityPolicy"/>
     </owl:ObjectProperty>
     
 
@@ -576,7 +577,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#hierarchicalReferences">
         <rdfs:subPropertyOf rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#references"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <owl:propertyDisjointWith rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#nonHierarchicalReferences"/>
         <referenceType rdf:resource="http://www.hsu-ifa.de/kb/opcua/OpcUaNodeSet2.owl#HierarchicalReferences"/>
     </owl:ObjectProperty>
@@ -784,7 +784,6 @@
     <!-- http://www.hsu-ifa.de/ontologies/OpcUa#references -->
 
     <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/OpcUa#references">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <referenceType rdf:resource="http://www.hsu-ifa.de/ontologies/OpcUa#References"/>
     </owl:ObjectProperty>
     
