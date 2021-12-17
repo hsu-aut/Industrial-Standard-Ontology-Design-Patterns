@@ -1,5 +1,18 @@
 # Industrial-Standard-Ontology-Design-Patterns
 
+:warning: This repo has been archived. All ODPs are now maintained in separate repositories to better keep track of the versions. :warning:
+You can find these separate repositories here:
+ - [DIN EN 61360](https://github.com/hsu-aut/IndustrialStandard-ODP-DINEN61360)
+ - [VDI 2206](https://github.com/hsu-aut/IndustrialStandard-ODP-VDI2206)
+ - [VDI 2860](https://github.com/hsu-aut/IndustrialStandard-ODP-VDI2860)
+ - [VDI 3682](https://github.com/hsu-aut/IndustrialStandard-ODP-VDI3682)
+ - [DIN 8580](https://github.com/hsu-aut/IndustrialStandard-ODP-DIN8580)
+ - [ISA 88](https://github.com/hsu-aut/IndustrialStandard-ODP-ISA88)
+ - [WADL](https://github.com/hsu-aut/IndustrialStandard-ODP-WADL)
+ - [DIN EN 62264-2](https://github.com/hsu-aut/IndustrialStandard-ODP-DINEN62264-2)
+ - [OPC UA](https://github.com/hsu-aut/IndustrialStandard-ODP-OPC-UA)
+ - [ISO 22400-2](https://github.com/hsu-aut/IndustrialStandard-ODP-ISO22400-2)
+
 The development of software functionalities, or applications in general, that monitor and analyze manufacturing related data in order to improve, support or automate processes, is becoming increasingly important in industry. These applications require several information from different data sources in their context. An application that is planning a maintenance workers daily schedule for instance, requires several information about machine statuses, production plans and inventory, which resides in different systems likes Programmable Logical Controllers (PLC) or Structured Query Language (SQL) databases. Furthermore, manufacturing companies usually run machines and software systems from different vendors or of different ages. The schemata used in such systems do therefor not follow a certain standard, i.e. they are very heterogeneous in their semantics. When building such applications, accessing, searching and understanding the data sources is becoming a very time intensive, manual and error prone procedure that is repeated for every newly build application and for every newly introduced data source. To allow for an eased access, searching and understanding of these heterogeneous data sources, an ontology can be used to integrate all heterogeneous data sources in one schemata. 
 
 The ontologies within this repository are based on industrial standards (e.g. ISO, DIN EN, VDI/VDE etc.), hence, the ontologies use the vocabulary and technical concept of these standards, i.e. the ontologies formalize the knowledge contained in these standards.
